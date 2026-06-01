@@ -19,8 +19,6 @@ export function App() {
   const [error, setError] = useState<string | null>(null);
 
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  // 同座標の複数イベントをまとめて右パネルに表示するためのグループ
-  const [panelEvents, setPanelEvents] = useState<TournamentEvent[]>([]);
   const [activeAgeCategories, setActiveAgeCategories] = useState<Set<AgeCategory>>(new Set(['open']));
   const [activeGrades, setActiveGrades] = useState<Set<TournamentGrade>>(new Set(ALL_GRADES));
   const [query, setQuery] = useState('');
@@ -136,19 +134,25 @@ export function App() {
     });
   }, [events, activeAgeCategories, activeGrades, query]);
 
+  // フィルター済みイベントの中から選択座標のグループを導出（フィルター連動）
+  const panelEvents = useMemo(() => {
+    if (!selectedId) return [];
+    const selected = filteredEvents.find(e => e.id === selectedId);
+    if (!selected) return [];
+    const lat = selected.lat.toFixed(5);
+    const lng = selected.lng.toFixed(5);
+    return filteredEvents.filter(
+      e => e.lat.toFixed(5) === lat && e.lng.toFixed(5) === lng,
+    );
+  }, [selectedId, filteredEvents]);
+
   const [flyZoom, setFlyZoom] = useState(false);
 
   const handleSelect = useCallback((event: TournamentEvent, zoom = false) => {
     setFlyZoom(zoom);
     setSelectedId(event.id);
-    const lat = event.lat.toFixed(5);
-    const lng = event.lng.toFixed(5);
-    const group = events.filter(
-      e => e.lat.toFixed(5) === lat && e.lng.toFixed(5) === lng,
-    );
-    setPanelEvents(group.length > 0 ? group : [event]);
     if (window.innerWidth < 768) setSidebarOpen(false);
-  }, [events]);
+  }, []);
 
   const toggleAge = useCallback((cat: AgeCategory) => {
     setActiveAgeCategories(prev => {
@@ -181,7 +185,7 @@ export function App() {
           {sidebarOpen ? '✕' : '☰'}
         </button>
         <div className="app-header__title">
-          <span className="app-header__logo">⚡</span>
+          <img className="app-header__logo" src="/favicon.svg" alt="" aria-hidden="true" />
           <span>BBX 大会マップ</span>
         </div>
         <a
@@ -291,7 +295,7 @@ export function App() {
                 </div>
                 <button
                   className="detail-panel__close"
-                  onClick={() => { setSelectedId(null); setPanelEvents([]); }}
+                  onClick={() => setSelectedId(null)}
                   aria-label="閉じる"
                 >✕</button>
               </div>
@@ -301,7 +305,7 @@ export function App() {
                 <div key={ev.id} className={i > 0 ? 'detail-panel__divider' : ''}>
                   <EventDetail
                     event={ev}
-                    onClose={() => { setSelectedId(null); setPanelEvents([]); }}
+                    onClose={() => setSelectedId(null)}
                     hideVenue={panelEvents.length > 1}
                   />
                 </div>
