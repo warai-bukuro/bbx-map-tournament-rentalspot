@@ -21,20 +21,20 @@ export function EventDetail({ event, onClose }: Props) {
         <h2 className="event-detail__name">{event.name}</h2>
         <dl className="event-detail__info">
           <dt>開催日</dt>
-          <dd>
-            {formatDate(event.date)}
-            {event.endDate && ` 〜 ${formatDate(event.endDate)}`}
-          </dd>
+          <dd>{formatDate(event.date)}</dd>
           <dt>会場</dt>
           <dd>{event.venue}</dd>
           <dt>住所</dt>
           <dd>{event.address}</dd>
+          {event.price && <><dt>参加費</dt><dd>{event.price}</dd></>}
+          {event.capacity && <><dt>定員</dt><dd>{event.capacity} 名</dd></>}
+          {event.shikaku && <><dt>参加資格</dt><dd>{event.shikaku}</dd></>}
         </dl>
         <div className="event-detail__actions">
-          {event.url && (
+          {event.detailUrl && (
             <a
               className="event-detail__link"
-              href={event.url}
+              href={event.detailUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,7 +50,7 @@ export function EventDetail({ event, onClose }: Props) {
             Google Maps ↗
           </a>
         </div>
-        {event.note && <p className="event-detail__note">{event.note}</p>}
+        {event.annai && <p className="event-detail__note">{event.annai}</p>}
       </div>
     </div>
   );
