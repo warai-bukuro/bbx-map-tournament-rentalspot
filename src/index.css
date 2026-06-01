@@ -103,6 +103,36 @@ body {
   border-color: var(--border-hover);
 }
 
+.app-footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 3px;
+  background: rgba(18, 20, 36, 0.75);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--border);
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  pointer-events: auto;
+}
+
+.app-footer__link {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.app-footer__link:hover {
+  color: var(--text-secondary);
+}
+
+.app-footer__sep {
+  opacity: 0.4;
+}
 .app-body {
   display: flex;
   flex: 1;

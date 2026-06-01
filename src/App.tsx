@@ -288,6 +288,25 @@ export function App() {
         </aside>
 
         <main className="map-wrapper">
+          <footer className="app-footer">
+            <a
+              className="app-footer__link"
+              href="https://x.com/noritsunetsune"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @noritsunetsune
+            </a>
+            <span className="app-footer__sep">·</span>
+            <a
+              className="app-footer__link"
+              href="https://github.com/noritsune/bbx-tournament-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </footer>
           <MapView
             events={filteredEvents}
             selectedId={selectedId}

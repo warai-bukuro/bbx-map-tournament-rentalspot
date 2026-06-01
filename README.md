@@ -1,8 +1,172 @@
+# BBX Tournament Map
+※日本語版は下部にあります。
+A web app that visualizes Beyblade X tournament schedules on an interactive map.
+
+![Screenshot](screenshot.png)
+
+## Features
+
+- **Map view**: Displays tournament venues across Japan with color-coded pins
+- **Age category filter**: Toggle between Open and Regular
+- **Tournament grade filter**: Filter by G3 / G2 / G1 / S1 / Other
+- **Text search**: Real-time search by tournament name, venue, prefecture, or address
+- **Detail panel**: Click a pin or list item to view entry fee, capacity, eligibility, and more
+  - Multiple tournaments at the same location are listed together
+  - Panel updates in real time when filters change
+- **Google Maps link**: Open the venue directly in the Maps app from the detail panel
+- **Caching**: Geocoding results are stored in localStorage for instant display on subsequent visits
+
+## Tech Stack
+
+| Role | Technology |
+|---|---|
+| Framework | React 18 + TypeScript |
+| Build | Vite 6 |
+| Map | Leaflet + react-leaflet + OpenStreetMap |
+| Geocoding | GSI Address Search API |
+
+## Setup
+
+```bash
+npm install
+npm run dev      # Start dev server (http://localhost:5173)
+npm run build    # Production build
+npm run preview  # Preview production build
+```
+
+## Data Sources
+
+### Tournament Data
+
+Fetched once on page load from the official API.
+
+```
+GET https://beyblade.takaratomy.co.jp/beyblade-x/shop_event/event_manage/public/api/open_all_event
+```
+
+Response format (excerpt):
+
+```json
+{
+  "state": "success",
+  "events": [
+    {
+      "id": 48063,
+      "event_type_open_name": "S1イベント",
+      "event_shubetsu": "G2",
+      "name": "S1イベント㊿",
+      "start_date": "2026-05-31 06:00",
+      "shop_name": "トイザらス 〇〇店",
+      "place_name": "出部公民館",
+      "place_address": "岡山県井原市上出部町1219-2",
+      "place_address1": "岡山県",
+      "address1": "岡山県",
+      "address2": "井原市上出部町1219-2",
+      "price": "無料",
+      "capacity": 128,
+      "shikaku": "6歳以上だれでもOK",
+      "uketsuke": 1
+    }
+  ]
+}
+```
+
+### Address Resolution
+
+`resolveAddress()` in `utils/address.ts` determines the address string by the following priority:
+
+1. Use `place_address` if present (auto-corrects duplicated prefecture names)
+2. Otherwise, concatenate `address1` + `address2`
+3. If `address2` starts with a prefecture name, use `address2` alone
+
+### Geocoding
+
+Coordinates are not included in the API response. Addresses are converted to lat/lng using the [GSI Address Search API](https://msearch.gsi.go.jp/address-search/AddressSearch).
+
+- CORS-enabled; callable directly from the browser
+- Processed in batches of 5 with a 200ms interval
+- Results cached in `localStorage` (key: `bbx_geocode_cache_v2`)
+- Events with no resolved coordinates are excluded from the map
+
+## Filter Specification
+
+Filters apply simultaneously to the map, the left sidebar list, and the right detail panel.
+
+### Age Category (`AgeCategory`)
+
+If any of `keishiki` / `event_shubetsu` / `event_type_open_name` / `event_type_name` contains "レギュラー" or "regular", the event is classified as `regular`; otherwise `open`.
+
+| Value | Label |
+|---|---|
+| `open` | Open |
+| `regular` | Regular |
+
+### Tournament Grade (`TournamentGrade`)
+
+Detected from `event_shubetsu` / `event_type_open_name` / `event_type_name`.
+
+| Value | Label | Pin Color |
+|---|---|---|
+| `G3` | G3 | Cyan |
+| `G2` | G2 | Green |
+| `G1` | G1 | Amber |
+| `S1` | S1 | Magenta |
+| `other` | Other | Gray |
+
+Special types such as Ambassador or Extreme Cup are treated as `other` grade, with pin color overridden based on `EventType`.
+
+## Event Type (`EventType`)
+
+Used for badge display and pin color override, not as a filter axis.
+
+| Type | API `event_type_open_name` |
+|---|---|
+| `b4store` | `B4大会` / `B4イベント` |
+| `s1` | `S1大会` / `S1イベント` |
+| `ambassador` | `アンバサダーイベント` |
+| `extreme-cup` | `エクストリームカップ` |
+| `casual-battle` | `カジュアルバトルデイ` / `CASUAL BATTLE DAY` |
+| `tour` | `出張イベント` |
+| `fan` | `ファン主催イベント` |
+| `other` | Anything else |
+
+## Directory Structure
+
+```
+src/
+├── api/
+│   └── events.ts        # Official API fetch
+├── components/
+│   ├── EventCard.tsx    # Single card in the list
+│   ├── EventDetail.tsx  # Single event in the detail panel
+│   ├── EventList.tsx    # Sidebar list
+│   ├── FilterBar.tsx    # Age / grade filters + search
+│   └── MapView.tsx      # Leaflet map + CircleMarker
+├── types/
+│   └── index.ts         # TournamentEvent / ApiEvent types and mapping
+├── utils/
+│   ├── address.ts       # Address resolution and prefecture normalization
+│   ├── date.ts          # Date formatting (UTC → JST)
+│   ├── geocode.ts       # GSI geocoding + cache
+│   └── linkify.tsx      # URL → anchor conversion for detail fields
+├── App.tsx              # State management and layout
+├── index.css            # Design tokens and styles
+└── main.tsx             # Entry point
+public/
+├── favicon.svg          # App icon (also used in header)
+└── icons.svg            # SVG sprites for map pins
+```
+
+## References
+
+- [Design reference: LBE Map](https://webar.styly.cc/landing_pages/lbe-map)
+- [Official schedule page](https://beyblade.takaratomy.co.jp/beyblade-x/event/schedule.html#schedule)
+
+---
+
 # BBX 大会マップ
 
 ベイブレードXの大会スケジュールを地図上で可視化するWebアプリ。
-
-![スクリーンショット](screenshot.png)
 
 ## 機能
 
@@ -148,8 +312,9 @@ src/
 │   └── index.ts         # TournamentEvent・ApiEvent 型定義・マッピング関数
 ├── utils/
 │   ├── address.ts       # 住所解決・都道府県名正規化
-│   ├── date.ts          # 日付フォーマット
-│   └── geocode.ts       # 国土地理院ジオコーディング + キャッシュ
+│   ├── date.ts          # 日付フォーマット（UTC→JST）
+│   ├── geocode.ts       # 国土地理院ジオコーディング + キャッシュ
+│   └── linkify.tsx      # 詳細欄のURL→リンク変換
 ├── App.tsx              # 状態管理・レイアウト
 ├── index.css            # デザイントークン・スタイル
 └── main.tsx             # エントリーポイント

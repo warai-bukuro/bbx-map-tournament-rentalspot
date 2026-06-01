@@ -1,6 +1,7 @@
 import type { TournamentEvent } from '../types';
 import { getBadgeLabel, getBadgeColor } from '../types';
 import { formatDate, formatTime } from '../utils/date';
+import { linkify } from '../utils/linkify';
 
 interface Props {
   event: TournamentEvent;
@@ -13,7 +14,7 @@ function Section({ label, value }: { label: string; value?: string | null }) {
   return (
     <div className="ed-section">
       <p className="ed-section__label">{label}</p>
-      <p className="ed-section__value">{value}</p>
+      <p className="ed-section__value">{linkify(value)}</p>
     </div>
   );
 }

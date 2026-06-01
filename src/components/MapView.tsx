@@ -8,6 +8,7 @@ const isMobile = window.innerWidth < 768;
 import type { TournamentEvent } from '../types';
 import { getBadgeColor, getBadgeLabel } from '../types';
 import { formatDate, formatTime } from '../utils/date';
+import { linkify } from '../utils/linkify';
 
 
 /** グループ内で直近（または最後）のイベントを返す */
@@ -153,32 +154,32 @@ function PopupDetail({ event, onSelect }: { event: TournamentEvent; onSelect: (e
       )}
       {event.shikaku && (
         <p className="popup-detail__row">
-          <span className="popup-detail__key">参加資格</span>{event.shikaku}
+          <span className="popup-detail__key">参加資格</span>{linkify(event.shikaku)}
         </p>
       )}
       {event.media && (
         <p className="popup-detail__row">
-          <span className="popup-detail__key">参加方法</span>{event.media}
+          <span className="popup-detail__key">参加方法</span>{linkify(event.media)}
         </p>
       )}
       {event.annai && (
         <p className="popup-detail__row">
-          <span className="popup-detail__key">告知媒体</span>{event.annai}
+          <span className="popup-detail__key">告知媒体</span>{linkify(event.annai)}
         </p>
       )}
       {event.keishiki && (
         <p className="popup-detail__row">
-          <span className="popup-detail__key">大会形式</span>{event.keishiki}
+          <span className="popup-detail__key">大会形式</span>{linkify(event.keishiki)}
         </p>
       )}
       {event.motimono && (
         <p className="popup-detail__row">
-          <span className="popup-detail__key">持ち物</span>{event.motimono}
+          <span className="popup-detail__key">持ち物</span>{linkify(event.motimono)}
         </p>
       )}
       {event.tyuui && (
         <p className="popup-detail__row">
-          <span className="popup-detail__key">お知らせ</span>{event.tyuui}
+          <span className="popup-detail__key">お知らせ</span>{linkify(event.tyuui)}
         </p>
       )}
       <div className="popup-detail__actions">
