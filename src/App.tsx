@@ -24,7 +24,7 @@ export function App() {
   const [activeAgeCategories, setActiveAgeCategories] = useState<Set<AgeCategory>>(new Set(['open']));
   const [activeGrades, setActiveGrades] = useState<Set<TournamentGrade>>(new Set(ALL_GRADES));
   const [query, setQuery] = useState('');
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 768);
 
   useEffect(() => {
     let cancelled = false;
@@ -75,6 +75,7 @@ export function App() {
               price: e.price ?? undefined,
               capacity: e.capacity || undefined,
               shikaku: e.shikaku || undefined,
+              houhou: e.houhou ?? undefined,
               annai: e.annai || undefined,
               media: e.media ?? undefined,
               keishiki: e.keishiki || undefined,
@@ -135,9 +136,11 @@ export function App() {
     });
   }, [events, activeAgeCategories, activeGrades, query]);
 
-  const handleSelect = useCallback((event: TournamentEvent) => {
+  const [flyZoom, setFlyZoom] = useState(false);
+
+  const handleSelect = useCallback((event: TournamentEvent, zoom = false) => {
+    setFlyZoom(zoom);
     setSelectedId(event.id);
-    // 同座標（小数点5桁一致）のイベントをパネルに表示
     const lat = event.lat.toFixed(5);
     const lng = event.lng.toFixed(5);
     const group = events.filter(
@@ -219,6 +222,12 @@ export function App() {
           </div>
         )}
 
+        {sidebarOpen && (
+          <div
+            className="sidebar-backdrop"
+            onClick={() => setSidebarOpen(false)}
+          />
+        )}
         <aside className={`sidebar${sidebarOpen ? ' sidebar--open' : ''}`}>
           <FilterBar
             activeAgeCategories={activeAgeCategories}
@@ -234,7 +243,7 @@ export function App() {
           <EventList
             events={filteredEvents}
             selectedId={selectedId}
-            onSelect={handleSelect}
+            onSelect={e => handleSelect(e, true)}
           />
         </aside>
 
@@ -243,6 +252,7 @@ export function App() {
             events={filteredEvents}
             selectedId={selectedId}
             onSelect={handleSelect}
+            flyZoom={flyZoom}
           />
 
           {/* エラー表示 */}

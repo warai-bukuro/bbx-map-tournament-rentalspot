@@ -62,7 +62,7 @@ export function EventDetail({ event, onClose, hideVenue = false }: Props) {
           </div>
         )}
 
-        <Section label="参加方法" value={event.annai} />
+        <Section label="参加方法" value={event.houhou} />
         <Section label="告知媒体" value={event.media} />
         <Section label="大会形式" value={event.keishiki} />
         <Section label="持ち物" value={event.motimono} />
@@ -70,6 +70,14 @@ export function EventDetail({ event, onClose, hideVenue = false }: Props) {
 
         {/* リンク（Google Mapsは複数イベント時は共通ヘッダーに表示） */}
         <div className="ed-actions">
+          <a
+            className="ed-btn ed-btn--official"
+            href={`https://beyblade.takaratomy.co.jp/beyblade-x/shop_event/manage/open_detail_all.html?id=${event.id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            公式詳細 ↗
+          </a>
           {event.detailUrl && (
             <a
               className="ed-btn ed-btn--primary"

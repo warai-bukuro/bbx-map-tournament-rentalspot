@@ -8,9 +8,9 @@
   --bg-card: #1a1d2e;
   --accent: #e63946;
   --accent-glow: #e6394644;
-  --text-primary: #f0f2ff;
-  --text-secondary: #9098be;
-  --text-muted: #5a6080;
+  --text-primary: #ffffff;
+  --text-secondary: #c0c8e8;
+  --text-muted: #8890b0;
   --border: #2a2e48;
   --border-hover: #3a3f60;
   --radius-sm: 6px;
@@ -120,14 +120,28 @@ body {
   transition: width 0.25s ease, opacity 0.25s ease;
 }
 
+.sidebar-backdrop {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .sidebar-backdrop {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 1099;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
 @media (max-width: 767px) {
   .sidebar {
     position: absolute;
-    top: var(--header-height);
+    top: 0;
     left: 0;
     bottom: 0;
-    width: 100%;
-    z-index: 90;
+    width: 80%;
+    z-index: 1100;
     transform: translateX(-100%);
     transition: transform 0.25s ease;
   }
@@ -333,6 +347,24 @@ body {
 }
 .leaflet-control-attribution a { color: #5a6080 !important; }
 
+/* ===== Marker date label ===== */
+.marker-label {
+  background: #fff !important;
+  border: none !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4) !important;
+  border-radius: 4px !important;
+  padding: 1px 4px !important;
+  font-family: var(--font);
+  font-size: 10px;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.marker-label::before {
+  display: none !important;
+}
+
 /* Popup — ダークテーマ（サイドバーに合わせる） */
 .leaflet-popup-content-wrapper {
   background: var(--bg-surface) !important;
@@ -371,6 +403,12 @@ body {
   font-family: var(--font);
 }
 
+@media (max-width: 767px) {
+  .leaflet-popup-content-wrapper {
+    width: calc(100vw - 24px) !important;
+  }
+}
+
 .popup-count {
   font-size: 11px;
   font-weight: 700;
@@ -381,9 +419,9 @@ body {
 }
 
 .popup-item {
-  cursor: pointer;
   padding: 8px 0;
   border-top: 1px solid var(--border);
+  cursor: pointer;
   transition: opacity 0.1s;
 }
 .popup-item:first-of-type {
@@ -393,8 +431,86 @@ body {
 .popup-item:last-of-type {
   padding-bottom: 0;
 }
-.popup-item:hover {
-  opacity: 0.75;
+.popup-item:hover { opacity: 0.8; }
+.popup-item--expanded { opacity: 1 !important; }
+
+.popup-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.popup-item__chevron {
+  font-size: 9px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.popup-detail {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.popup-detail__row {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.2;
+  display: flex;
+  gap: 6px;
+}
+
+.popup-detail__key {
+  color: var(--text-muted);
+  font-weight: 600;
+  flex-shrink: 0;
+  min-width: 56px;
+}
+
+.popup-detail__actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.popup-detail__link {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff !important;
+  background: var(--accent);
+  text-decoration: none !important;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+.popup-detail__link--panel {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+.popup-detail__link--panel:hover {
+  background: var(--border);
+  color: var(--text-primary);
+}
+.popup-detail__link--official {
+  background: #1a56db !important;
+  border-color: #1a56db !important;
+  color: #fff !important;
+}
+
+@media (max-width: 767px) {
+  .popup-detail__link--panel {
+    display: none;
+  }
 }
 
 .popup-badge {
@@ -648,7 +764,7 @@ body {
 .ed-section__value {
   font-size: 14px;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.3;
   white-space: pre-wrap;
 }
 .ed-section__sub {
@@ -678,6 +794,14 @@ body {
 .ed-btn:hover {
   background: var(--border);
   color: var(--text-primary);
+}
+.ed-btn--official {
+  background: #1a56db;
+  border-color: #1a56db;
+  color: #fff !important;
+}
+.ed-btn--official:hover {
+  background: #1446b8;
 }
 .ed-btn--primary {
   background: var(--accent);

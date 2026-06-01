@@ -30,6 +30,8 @@ export interface TournamentEvent {
   capacity?: number;
   shikaku?: string;
   /** 参加方法 */
+  houhou?: string;
+  /** 案内 */
   annai?: string;
   /** 告知媒体 */
   media?: string;
@@ -62,6 +64,7 @@ export interface ApiEvent {
   capacity: number;
   price: string | null;
   shikaku: string;
+  houhou: string | null;
   annai: string;
   detail_link_url: string | null;
   uketsuke: number;
