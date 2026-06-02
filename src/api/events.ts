@@ -4,7 +4,7 @@ const API_URL =
   "https://beyblade.takaratomy.co.jp/beyblade-x/shop_event/event_manage/public/api/open_all_event";
 
 const CACHE_KEY = "bbx_events_cache";
-const TTL_MS = 24 * 60 * 60 * 1000; // 24時間
+const TTL_MS = 60 * 60 * 1000; // 1時間
 
 interface CacheEntry {
   fetchedAt: number;

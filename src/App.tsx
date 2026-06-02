@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useState, useMemo, useEffect, useCallback, useRef } from 'react';
 import { MapView } from './components/MapView';
 import { EventList } from './components/EventList';
 import { EventDetail } from './components/EventDetail';
@@ -24,140 +24,152 @@ export function App() {
   const [query, setQuery] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 768);
 
-  useEffect(() => {
-    let cancelled = false;
+  const isFirstLoad = useRef(true);
+  const currentLoadId = useRef(0);
 
-    async function load() {
-      try {
-        setLoading(true);
-        setError(null);
+  const load = useCallback(async () => {
+    const loadId = ++currentLoadId.current;
+    const isCancelled = () => currentLoadId.current !== loadId;
 
-        const apiEvents = await fetchApiEvents();
+    try {
+      setLoading(true);
+      setError(null);
 
-        if (cancelled) return;
+      const apiEvents = await fetchApiEvents();
 
-        const addresses = [...new Set(apiEvents.map(resolveAddress).filter(Boolean))];
+      if (isCancelled()) return;
 
-        setLoading(false);
+      const addresses = [...new Set(apiEvents.map(resolveAddress).filter(Boolean))];
 
-        const hasCachedAll = isCachedAddresses(addresses);
-        if (!hasCachedAll) {
-          setGeocoding(true);
+      setLoading(false);
+
+      const hasCachedAll = isCachedAddresses(addresses);
+      if (!hasCachedAll) {
+        setGeocoding(true);
+      }
+
+      const createEvent = (e: typeof apiEvents[0], latlng: { lat: number; lng: number }): TournamentEvent => ({
+        id: String(e.id),
+        name: e.name ?? e.event_type_open_name,
+        type: mapEventType(e),
+        ageCategory: mapAgeCategory(e),
+        grade: mapTournamentGrade(e),
+        startDate: e.start_date,
+        venue: e.place_name || e.shop_name,
+        address: resolveAddress(e),
+        prefecture: resolvePrefecture(e),
+        lat: latlng.lat,
+        lng: latlng.lng,
+        uketsuke: e.uketsuke,
+        price: e.price ?? undefined,
+        capacity: e.capacity || undefined,
+        shikaku: e.shikaku || undefined,
+        houhou: e.houhou ?? undefined,
+        annai: e.annai || undefined,
+        media: e.media ?? undefined,
+        keishiki: e.keishiki || undefined,
+        motimono: e.motimono || undefined,
+        tyuui: e.tyuui ?? undefined,
+        detailUrl: e.detail_link_url ?? undefined,
+      });
+
+      const addressToEvents = new Map<string, typeof apiEvents>();
+      for (const e of apiEvents) {
+        const addr = resolveAddress(e);
+        if (!addressToEvents.has(addr)) {
+          addressToEvents.set(addr, []);
         }
+        addressToEvents.get(addr)!.push(e);
+      }
 
-        const createEvent = (e: typeof apiEvents[0], latlng: { lat: number; lng: number }): TournamentEvent => ({
-          id: String(e.id),
-          name: e.name ?? e.event_type_open_name,
-          type: mapEventType(e),
-          ageCategory: mapAgeCategory(e),
-          grade: mapTournamentGrade(e),
-          startDate: e.start_date,
-          venue: e.place_name || e.shop_name,
-          address: resolveAddress(e),
-          prefecture: resolvePrefecture(e),
-          lat: latlng.lat,
-          lng: latlng.lng,
-          uketsuke: e.uketsuke,
-          price: e.price ?? undefined,
-          capacity: e.capacity || undefined,
-          shikaku: e.shikaku || undefined,
-          houhou: e.houhou ?? undefined,
-          annai: e.annai || undefined,
-          media: e.media ?? undefined,
-          keishiki: e.keishiki || undefined,
-          motimono: e.motimono || undefined,
-          tyuui: e.tyuui ?? undefined,
-          detailUrl: e.detail_link_url ?? undefined,
-        });
+      let coords: Record<string, { lat: number; lng: number } | null> = {};
 
-        const addressToEvents = new Map<string, typeof apiEvents>();
-        for (const e of apiEvents) {
-          const addr = resolveAddress(e);
-          if (!addressToEvents.has(addr)) {
-            addressToEvents.set(addr, []);
-          }
-          addressToEvents.get(addr)!.push(e);
-        }
-
-        const resolved = new Set<string>();
-        let coords: Record<string, { lat: number; lng: number } | null> = {};
-
-        if (hasCachedAll) {
-          coords = await geocodeAddresses(addresses);
-          const newEventsList: TournamentEvent[] = [];
-          apiEvents.forEach(e => {
-            const addr = resolveAddress(e);
-            const latlng = coords[addr];
-            if (latlng) {
-              newEventsList.push(createEvent(e, latlng));
-            }
-          });
-          setEvents(newEventsList);
-        } else {
-          coords = await geocodeAddresses(
-            addresses,
-            (done, total) => {
-              if (!cancelled) setGeocodeProgress({ done, total });
-            },
-            (address, latlng) => {
-              if (cancelled) return;
-              resolved.add(address);
-
-              if (latlng) {
-                const eventsForAddr = addressToEvents.get(address) || [];
-                const newEvents = eventsForAddr.map(e => createEvent(e, latlng));
-                setEvents(prev => {
-                  const ids = new Set(prev.map(e => e.id));
-                  const filtered = newEvents.filter(e => !ids.has(e.id));
-                  return [...prev, ...filtered];
-                });
-              }
-            },
-          );
-        }
-
-        if (cancelled) return;
-
-        const failed: typeof apiEvents = [];
+      if (hasCachedAll) {
+        coords = await geocodeAddresses(addresses);
+        const newEventsList: TournamentEvent[] = [];
         apiEvents.forEach(e => {
           const addr = resolveAddress(e);
-          if (!coords[addr]) {
-            failed.push(e);
+          const latlng = coords[addr];
+          if (latlng) {
+            newEventsList.push(createEvent(e, latlng));
           }
         });
+        setEvents(newEventsList);
+      } else {
+        coords = await geocodeAddresses(
+          addresses,
+          (done, total) => {
+            if (!isCancelled()) setGeocodeProgress({ done, total });
+          },
+          (address, latlng) => {
+            if (isCancelled()) return;
 
-        console.info(
-          `[BBX Map] 取得: ${apiEvents.length} 件 / 表示: ${apiEvents.length - failed.length} 件 / 失敗: ${failed.length} 件`,
+            if (latlng) {
+              const eventsForAddr = addressToEvents.get(address) || [];
+              const newEvents = eventsForAddr.map(e => createEvent(e, latlng));
+              setEvents(prev => {
+                const ids = new Set(prev.map(e => e.id));
+                const filtered = newEvents.filter(e => !ids.has(e.id));
+                return [...prev, ...filtered];
+              });
+            }
+          },
         );
-        if (failed.length > 0) {
-          console.warn(
-            '[BBX Map] 地図に表示できなかったイベント:',
-            failed.map(e => ({
-              id: e.id,
-              name: e.name ?? e.event_type_open_name,
-              resolvedAddress: resolveAddress(e),
-              place_address: e.place_address,
-              address1: e.address1,
-              address2: e.address2,
-            })),
-          );
+      }
+
+      if (isCancelled()) return;
+
+      const failed: typeof apiEvents = [];
+      apiEvents.forEach(e => {
+        const addr = resolveAddress(e);
+        if (!coords[addr]) {
+          failed.push(e);
         }
-      } catch (err) {
-        if (!cancelled) {
-          setError(err instanceof Error ? err.message : 'データの取得に失敗しました');
-        }
-      } finally {
-        if (!cancelled) {
-          setLoading(false);
-          setGeocoding(false);
-          setGeocodeProgress(null);
-        }
+      });
+
+      console.info(
+        `[BBX Map] 取得: ${apiEvents.length} 件 / 表示: ${apiEvents.length - failed.length} 件 / 失敗: ${failed.length} 件`,
+      );
+      if (failed.length > 0) {
+        console.warn(
+          '[BBX Map] 地図に表示できなかったイベント:',
+          failed.map(e => ({
+            id: e.id,
+            name: e.name ?? e.event_type_open_name,
+            resolvedAddress: resolveAddress(e),
+            place_address: e.place_address,
+            address1: e.address1,
+            address2: e.address2,
+          })),
+        );
+      }
+    } catch (err) {
+      if (!isCancelled()) {
+        setError(err instanceof Error ? err.message : 'データの取得に失敗しました');
+      }
+    } finally {
+      if (!isCancelled()) {
+        setLoading(false);
+        setGeocoding(false);
+        setGeocodeProgress(null);
+        isFirstLoad.current = false;
       }
     }
-
-    load();
-    return () => { cancelled = true; };
   }, []);
+
+  useEffect(() => {
+    load();
+  }, [load]);
+
+  useEffect(() => {
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') {
+        load();
+      }
+    };
+    document.addEventListener('visibilitychange', onVisible);
+    return () => document.removeEventListener('visibilitychange', onVisible);
+  }, [load]);
 
   const filteredEvents = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -174,7 +186,6 @@ export function App() {
     });
   }, [events, activeAgeCategories, activeGrades, query]);
 
-  // フィルター済みイベントの中から選択座標のグループを導出（フィルター連動）
   const panelEvents = useMemo(() => {
     if (!selectedId) return [];
     const selected = filteredEvents.find(e => e.id === selectedId);
@@ -213,6 +224,7 @@ export function App() {
   }, []);
 
   const isInitializing = loading || geocoding;
+  const isFirst = isFirstLoad.current;
 
   return (
     <div className="app">
@@ -238,13 +250,18 @@ export function App() {
         </a>
       </header>
 
-      {/* ローディングバー（ヘッダーの直下） */}
       {isInitializing && (
         <div className="loading-bar-top">
           <div className="loading-bar-top__content">
             <div className="loading-spinner-small" />
             <span className="loading-bar-top__text">
-              {loading ? 'イベントを一括取得中(初回のみ)' : geocodeProgress ? `地図情報を読み込み中（初回のみ）: ${geocodeProgress.done} / ${geocodeProgress.total}` : '地図情報を取得中…'}
+              {loading
+                ? (isFirst ? 'イベントを一括取得中(初回のみ)' : 'データを更新中…')
+                : geocodeProgress
+                  ? (isFirst
+                      ? `地図情報を読み込み中（初回のみ）: ${geocodeProgress.done} / ${geocodeProgress.total}`
+                      : `地図情報を更新中: ${geocodeProgress.done} / ${geocodeProgress.total}`)
+                  : '地図情報を取得中…'}
             </span>
           </div>
           {geocoding && geocodeProgress && (
@@ -314,7 +331,6 @@ export function App() {
             flyZoom={flyZoom}
           />
 
-          {/* エラー表示 */}
           {error && !isInitializing && (
             <div className="error-overlay">
               <div className="error-box">
@@ -328,7 +344,6 @@ export function App() {
           )}
         </main>
 
-        {/* 大会詳細パネル（同座標の複数イベントに対応） */}
         {selectedId && panelEvents.length > 0 && (
           <aside className="detail-panel">
             {panelEvents.length > 1 && (
