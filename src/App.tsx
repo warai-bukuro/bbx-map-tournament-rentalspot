@@ -1,4 +1,6 @@
 import { useState, useMemo, useEffect, useCallback, useRef } from 'react';
+import { createPortal } from 'react-dom';
+import { FilterIcon, MenuIcon } from "./components/Icons";
 import { MapView } from './components/MapView';
 import { EventList } from './components/EventList';
 import { EventDetail } from './components/EventDetail';
@@ -198,6 +200,7 @@ export function App() {
   }, [selectedId, filteredEvents]);
 
   const [flyZoom, setFlyZoom] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleSelect = useCallback((event: TournamentEvent, zoom = false) => {
     setFlyZoom(zoom);
@@ -230,24 +233,56 @@ export function App() {
     <div className="app">
       <header className="app-header">
         <button
-          className="app-header__menu"
-          onClick={() => setSidebarOpen(o => !o)}
-          aria-label="メニューを開く"
+          className={`app-header__menu${sidebarOpen ? ' app-header__menu--active' : ''}`}
+          onClick={() => setSidebarOpen((o) => !o)}
+          aria-label="フィルターを開く"
         >
-          {sidebarOpen ? '✕' : '☰'}
+          <FilterIcon />
         </button>
         <div className="app-header__title">
-          <img className="app-header__logo" src="/favicon.svg" alt="" aria-hidden="true" />
+          <img
+            className="app-header__logo"
+            src="/favicon.svg"
+            alt=""
+            aria-hidden="true"
+          />
           <span>BBX 大会マップ</span>
         </div>
-        <a
-          className="app-header__official"
-          href="https://beyblade.takaratomy.co.jp/beyblade-x/event/schedule.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          公式スケジュール ↗
-        </a>
+        <div className="app-header__nav">
+          <button
+            className={`app-header__menu${menuOpen ? ' app-header__menu--active' : ''}`}
+            onClick={() => setMenuOpen((o) => !o)}
+            aria-label="メニューを開く"
+          >
+            <MenuIcon />
+          </button>
+          {menuOpen && createPortal(
+            <>
+              <div className="app-header__overlay" onClick={() => setMenuOpen(false)} />
+              <div className="app-header__popup">
+                <a
+                  className="app-header__popup-item"
+                  href="https://beyblade.takaratomy.co.jp/beyblade-x/event/schedule.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  公式サイト ↗
+                </a>
+                <a
+                  className="app-header__popup-item"
+                  href="https://beymetchannel.github.io/BeyCalendar/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  BEYカレンダー ↗
+                </a>
+              </div>
+            </>,
+            document.body,
+          )}
+        </div>
       </header>
 
       {isInitializing && (
@@ -256,12 +291,14 @@ export function App() {
             <div className="loading-spinner-small" />
             <span className="loading-bar-top__text">
               {loading
-                ? (isFirst ? 'イベントを一括取得中(初回のみ)' : 'データを更新中…')
+                ? isFirst
+                  ? "イベントを一括取得中"
+                  : "データを更新中…"
                 : geocodeProgress
-                  ? (isFirst
-                      ? `地図情報を読み込み中（初回のみ）: ${geocodeProgress.done} / ${geocodeProgress.total}`
-                      : `地図情報を更新中: ${geocodeProgress.done} / ${geocodeProgress.total}`)
-                  : '地図情報を取得中…'}
+                  ? isFirst
+                    ? `地図情報を読み込み中（初回のみ）: ${geocodeProgress.done} / ${geocodeProgress.total}`
+                    : `地図情報を更新中: ${geocodeProgress.done} / ${geocodeProgress.total}`
+                  : "地図情報を取得中…"}
             </span>
           </div>
           {geocoding && geocodeProgress && (
@@ -278,14 +315,13 @@ export function App() {
       )}
 
       <div className="app-body">
-
         {sidebarOpen && (
           <div
             className="sidebar-backdrop"
             onClick={() => setSidebarOpen(false)}
           />
         )}
-        <aside className={`sidebar${sidebarOpen ? ' sidebar--open' : ''}`}>
+        <aside className={`sidebar${sidebarOpen ? " sidebar--open" : ""}`}>
           <FilterBar
             activeAgeCategories={activeAgeCategories}
             onToggleAge={toggleAge}
@@ -295,12 +331,14 @@ export function App() {
             onQueryChange={setQuery}
           />
           <div className="sidebar__count">
-            {isInitializing ? '読み込み中…' : `${filteredEvents.length} 件の大会`}
+            {isInitializing
+              ? "読み込み中…"
+              : `${filteredEvents.length} 件の大会`}
           </div>
           <EventList
             events={filteredEvents}
             selectedId={selectedId}
-            onSelect={e => handleSelect(e, true)}
+            onSelect={(e) => handleSelect(e, true)}
           />
         </aside>
 
@@ -336,7 +374,10 @@ export function App() {
               <div className="error-box">
                 <p className="error-box__title">データの取得に失敗しました</p>
                 <p className="error-box__msg">{error}</p>
-                <button className="error-box__retry" onClick={() => window.location.reload()}>
+                <button
+                  className="error-box__retry"
+                  onClick={() => window.location.reload()}
+                >
                   再試行
                 </button>
               </div>
@@ -349,11 +390,15 @@ export function App() {
             {panelEvents.length > 1 && (
               <div className="detail-panel__header">
                 <div className="detail-panel__meta">
-                  <span className="detail-panel__title">{panelEvents.length} 件の大会</span>
+                  <span className="detail-panel__title">
+                    {panelEvents.length} 件の大会
+                  </span>
                   <span className="detail-panel__venue">
                     {panelEvents[0].prefecture} · {panelEvents[0].venue}
                   </span>
-                  <span className="detail-panel__address">{panelEvents[0].address}</span>
+                  <span className="detail-panel__address">
+                    {panelEvents[0].address}
+                  </span>
                   <a
                     className="detail-panel__maps-link"
                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(panelEvents[0].address)}`}
@@ -367,12 +412,17 @@ export function App() {
                   className="detail-panel__close"
                   onClick={() => setSelectedId(null)}
                   aria-label="閉じる"
-                >✕</button>
+                >
+                  ✕
+                </button>
               </div>
             )}
             <div className="detail-panel__scroll">
               {panelEvents.map((ev, i) => (
-                <div key={ev.id} className={i > 0 ? 'detail-panel__divider' : ''}>
+                <div
+                  key={ev.id}
+                  className={i > 0 ? "detail-panel__divider" : ""}
+                >
                   <EventDetail
                     event={ev}
                     onClose={() => setSelectedId(null)}
