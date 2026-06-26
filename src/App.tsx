@@ -269,15 +269,6 @@ export function App() {
                 >
                   公式サイト ↗
                 </a>
-                <a
-                  className="app-header__popup-item"
-                  href="https://beymetchannel.github.io/BeyCalendar/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  BEYカレンダー ↗
-                </a>
               </div>
             </>,
             document.body,

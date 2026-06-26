@@ -70,9 +70,7 @@ body {
   flex-shrink: 0;
 }
 .promo-banner__text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 /* ===== App Layout ===== */
