@@ -291,8 +291,9 @@ export function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
+        <img className="promo-banner__img" src="/promo-item.png" alt="SP Meter X" />
         <span className="promo-banner__label">PR</span>
-        <span className="promo-banner__text">メルカリで出品中！チェックしてみてください ↗</span>
+        <span className="promo-banner__text">シュートパワーを手軽に計測できる自作デバイスを販売開始！ ↗</span>
       </a>
 
       {isInitializing && (
