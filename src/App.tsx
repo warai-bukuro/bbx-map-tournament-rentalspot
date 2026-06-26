@@ -285,6 +285,16 @@ export function App() {
         </div>
       </header>
 
+      <a
+        className="promo-banner"
+        href="https://jp.mercari.com/item/m10908638615"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="promo-banner__label">PR</span>
+        <span className="promo-banner__text">メルカリで出品中！チェックしてみてください ↗</span>
+      </a>
+
       {isInitializing && (
         <div className="loading-bar-top">
           <div className="loading-bar-top__content">

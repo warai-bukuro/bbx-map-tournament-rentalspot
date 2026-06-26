@@ -33,6 +33,40 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ===== Promo Banner ===== */
+.promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(90deg, #e83c3c 0%, #c0392b 100%);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: opacity 0.15s;
+}
+.promo-banner:hover {
+  opacity: 0.88;
+}
+.promo-banner__label {
+  background: #fff;
+  color: #c0392b;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+.promo-banner__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* ===== App Layout ===== */
 .app {
   display: flex;
