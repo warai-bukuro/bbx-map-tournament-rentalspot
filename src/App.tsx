@@ -278,7 +278,7 @@ export function App() {
 
       <a
         className="promo-banner"
-        href="https://jp.mercari.com/item/m10908638615"
+        href="https://x.com/noritsunetsune/status/2070102559923331508"
         target="_blank"
         rel="noopener noreferrer"
       >
