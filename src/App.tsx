@@ -269,21 +269,23 @@ export function App() {
                 >
                   公式サイト ↗
                 </a>
-                <a
-                  className="app-header__popup-item"
-                  href="https://beymetchannel.github.io/BeyCalendar/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  BEYカレンダー ↗
-                </a>
               </div>
             </>,
             document.body,
           )}
         </div>
       </header>
+
+      <a
+        className="promo-banner"
+        href="https://x.com/noritsunetsune/status/2070102559923331508"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img className="promo-banner__img" src="/promo-item.png" alt="SP Meter X" />
+        <span className="promo-banner__label">PR</span>
+        <span className="promo-banner__text">シュートパワーを手軽に計測できる自作デバイスを販売開始！ ↗</span>
+      </a>
 
       {isInitializing && (
         <div className="loading-bar-top">
