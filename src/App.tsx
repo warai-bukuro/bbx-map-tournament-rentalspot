@@ -3,33 +3,42 @@ import { createPortal } from 'react-dom';
 import { FilterIcon, MenuIcon } from "./components/Icons";
 import { MapView } from './components/MapView';
 import { EventList } from './components/EventList';
+import { RentalSpotList } from './components/RentalSpotList';
 import { EventDetail } from './components/EventDetail';
 import { FilterBar } from './components/FilterBar';
 import { fetchApiEvents } from './api/events';
+import { fetchRentalSpots } from './api/rentalSpots';
 import { geocodeAddresses, isCachedAddresses } from './utils/geocode';
 import { resolveAddress, resolvePrefecture } from './utils/address';
-import type { TournamentEvent, AgeCategory, TournamentGrade } from './types';
-import { mapEventType, mapAgeCategory, mapTournamentGrade } from './types';
+import type { TournamentEvent, AgeCategory, TournamentGrade, RentalSpot, RentalChain } from './types';
+import { mapEventType, mapAgeCategory, mapTournamentGrade, RENTAL_CHAIN_LABELS } from './types';
 
 const ALL_GRADES: TournamentGrade[] = ['G3', 'G2', 'G1', 'S1', 'other'];
+const ALL_RENTAL_CHAINS: RentalChain[] = ['katsuatsu', 'kidsland-us', 'cote-dazur', 'beyblade-bar-tokyo', 'katori-jinja', 'hotel-monday', 'round1-spoccha', 'other'];
+
+type SelectedItem = { type: 'event'; id: string } | { type: 'rental'; id: string } | null;
 
 export function App() {
   const [events, setEvents] = useState<TournamentEvent[]>([]);
+  const [rentalSpots, setRentalSpots] = useState<RentalSpot[]>([]);
   const [loading, setLoading] = useState(true);
   const [geocoding, setGeocoding] = useState(false);
   const [geocodeProgress, setGeocodeProgress] = useState<{ done: number; total: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedItem, setSelectedItem] = useState<SelectedItem>(null);
   const [activeAgeCategories, setActiveAgeCategories] = useState<Set<AgeCategory>>(new Set(['open']));
   const [activeGrades, setActiveGrades] = useState<Set<TournamentGrade>>(new Set(ALL_GRADES));
+  const [activeRentalChains, setActiveRentalChains] = useState<Set<RentalChain>>(new Set(ALL_RENTAL_CHAINS));
+  const [showEvents, setShowEvents] = useState(true);
+  const [showRentals, setShowRentals] = useState(true);
   const [query, setQuery] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 768);
 
   const isFirstLoad = useRef(true);
   const currentLoadId = useRef(0);
 
-  const load = useCallback(async () => {
+  const loadEvents = useCallback(async () => {
     const loadId = ++currentLoadId.current;
     const isCancelled = () => currentLoadId.current !== loadId;
 
@@ -159,21 +168,48 @@ export function App() {
     }
   }, []);
 
+  const loadRentalSpots = useCallback(async () => {
+    try {
+      const spots = await fetchRentalSpots(
+        (done, total) => setGeocodeProgress({ done, total }),
+        (address, latlng) => {
+          if (latlng) {
+            setRentalSpots(prev => {
+              const idx = prev.findIndex(s => s.address === address);
+              if (idx >= 0) {
+                const next = [...prev];
+                next[idx] = { ...next[idx], lat: latlng.lat, lng: latlng.lng };
+                return next;
+              }
+              return prev;
+            });
+          }
+        },
+      );
+      setRentalSpots(spots);
+    } catch (err) {
+      console.error('Failed to load rental spots:', err);
+    }
+  }, []);
+
   useEffect(() => {
-    load();
-  }, [load]);
+    loadEvents();
+    loadRentalSpots();
+  }, [loadEvents, loadRentalSpots]);
 
   useEffect(() => {
     const onVisible = () => {
       if (document.visibilityState === 'visible') {
-        load();
+        loadEvents();
+        loadRentalSpots();
       }
     };
     document.addEventListener('visibilitychange', onVisible);
     return () => document.removeEventListener('visibilitychange', onVisible);
-  }, [load]);
+  }, [loadEvents, loadRentalSpots]);
 
   const filteredEvents = useMemo(() => {
+    if (!showEvents) return [];
     const q = query.trim().toLowerCase();
     return events.filter(e => {
       if (!activeAgeCategories.has(e.ageCategory)) return false;
@@ -186,25 +222,57 @@ export function App() {
         e.address.toLowerCase().includes(q)
       );
     });
-  }, [events, activeAgeCategories, activeGrades, query]);
+  }, [events, showEvents, activeAgeCategories, activeGrades, query]);
+
+  const filteredRentalSpots = useMemo(() => {
+    if (!showRentals) return [];
+    const q = query.trim().toLowerCase();
+    return rentalSpots.filter(s => {
+      if (!activeRentalChains.has(s.chain)) return false;
+      if (!q) return true;
+      return (
+        s.name.toLowerCase().includes(q) ||
+        RENTAL_CHAIN_LABELS[s.chain].toLowerCase().includes(q) ||
+        s.prefecture.toLowerCase().includes(q) ||
+        s.address.toLowerCase().includes(q)
+      );
+    });
+  }, [rentalSpots, showRentals, activeRentalChains, query]);
 
   const panelEvents = useMemo(() => {
-    if (!selectedId) return [];
-    const selected = filteredEvents.find(e => e.id === selectedId);
+    if (!selectedItem || selectedItem.type !== 'event') return [];
+    const selected = filteredEvents.find(e => e.id === selectedItem.id);
     if (!selected) return [];
     const lat = selected.lat.toFixed(5);
     const lng = selected.lng.toFixed(5);
     return filteredEvents.filter(
       e => e.lat.toFixed(5) === lat && e.lng.toFixed(5) === lng,
     );
-  }, [selectedId, filteredEvents]);
+  }, [selectedItem, filteredEvents]);
+
+  const panelRentalSpots = useMemo(() => {
+    if (!selectedItem || selectedItem.type !== 'rental') return [];
+    const selected = filteredRentalSpots.find(s => s.id === selectedItem.id);
+    if (!selected || selected.lat === null || selected.lng === null) return [];
+    const lat = selected.lat.toFixed(5);
+    const lng = selected.lng.toFixed(5);
+    return filteredRentalSpots.filter(
+      s => s.lat !== null && s.lng !== null && s.lat.toFixed(5) === lat && s.lng.toFixed(5) === lng,
+    );
+  }, [selectedItem, filteredRentalSpots]);
 
   const [flyZoom, setFlyZoom] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleSelect = useCallback((event: TournamentEvent, zoom = false) => {
+  const handleSelectEvent = useCallback((event: TournamentEvent, zoom = false) => {
     setFlyZoom(zoom);
-    setSelectedId(event.id);
+    setSelectedItem({ type: 'event', id: event.id });
+    if (window.innerWidth < 768) setSidebarOpen(false);
+  }, []);
+
+  const handleSelectRental = useCallback((spot: RentalSpot, zoom = false) => {
+    setFlyZoom(zoom);
+    setSelectedItem({ type: 'rental', id: spot.id });
     if (window.innerWidth < 768) setSidebarOpen(false);
   }, []);
 
@@ -222,6 +290,15 @@ export function App() {
       const next = new Set(prev);
       if (next.has(grade)) next.delete(grade);
       else next.add(grade);
+      return next;
+    });
+  }, []);
+
+  const toggleRentalChain = useCallback((chain: RentalChain) => {
+    setActiveRentalChains(prev => {
+      const next = new Set(prev);
+      if (next.has(chain)) next.delete(chain);
+      else next.add(chain);
       return next;
     });
   }, []);
@@ -329,19 +406,34 @@ export function App() {
             onToggleAge={toggleAge}
             activeGrades={activeGrades}
             onToggleGrade={toggleGrade}
+            showEvents={showEvents}
+            onToggleEvents={() => setShowEvents(e => !e)}
+            showRentals={showRentals}
+            onToggleRentals={() => setShowRentals(e => !e)}
+            activeRentalChains={activeRentalChains}
+            onToggleRentalChain={toggleRentalChain}
             query={query}
             onQueryChange={setQuery}
           />
           <div className="sidebar__count">
             {isInitializing
               ? "読み込み中…"
-              : `${filteredEvents.length} 件の大会`}
+              : `${filteredEvents.length} 件の大会${showRentals ? ` / ${filteredRentalSpots.length} 件の貸出店舗` : ''}`}
           </div>
-          <EventList
-            events={filteredEvents}
-            selectedId={selectedId}
-            onSelect={(e) => handleSelect(e, true)}
-          />
+          {showEvents && (
+            <EventList
+              events={filteredEvents}
+              selectedId={selectedItem?.type === 'event' ? selectedItem.id : null}
+              onSelect={(e) => handleSelectEvent(e, true)}
+            />
+          )}
+          {showRentals && (
+            <RentalSpotList
+              spots={filteredRentalSpots}
+              selectedId={selectedItem?.type === 'rental' ? selectedItem.id : null}
+              onSelect={(s) => handleSelectRental(s, true)}
+            />
+          )}
         </aside>
 
         <main className="map-wrapper">
@@ -366,8 +458,11 @@ export function App() {
           </footer>
           <MapView
             events={filteredEvents}
-            selectedId={selectedId}
-            onSelect={handleSelect}
+            rentalSpots={filteredRentalSpots}
+            showRentals={showRentals}
+            selectedId={selectedItem?.id ?? null}
+            onSelect={handleSelectEvent}
+            onSelectRental={handleSelectRental}
             flyZoom={flyZoom}
           />
 
@@ -387,7 +482,7 @@ export function App() {
           )}
         </main>
 
-        {selectedId && panelEvents.length > 0 && (
+        {(selectedItem?.type === 'event' && panelEvents.length > 0) && (
           <aside className="detail-panel">
             {panelEvents.length > 1 && (
               <div className="detail-panel__header">
@@ -412,7 +507,7 @@ export function App() {
                 </div>
                 <button
                   className="detail-panel__close"
-                  onClick={() => setSelectedId(null)}
+                  onClick={() => setSelectedItem(null)}
                   aria-label="閉じる"
                 >
                   ✕
@@ -427,7 +522,7 @@ export function App() {
                 >
                   <EventDetail
                     event={ev}
-                    onClose={() => setSelectedId(null)}
+                    onClose={() => setSelectedItem(null)}
                     hideVenue={panelEvents.length > 1}
                   />
                 </div>
@@ -435,6 +530,108 @@ export function App() {
             </div>
           </aside>
         )}
+
+        {(selectedItem?.type === 'rental' && panelRentalSpots.length > 0) && (
+          <aside className="detail-panel">
+            {panelRentalSpots.length > 1 && (
+              <div className="detail-panel__header">
+                <div className="detail-panel__meta">
+                  <span className="detail-panel__title">
+                    {panelRentalSpots.length} 件の貸出店舗
+                  </span>
+                  <span className="detail-panel__venue">
+                    {panelRentalSpots[0].prefecture} · {RENTAL_CHAIN_LABELS[panelRentalSpots[0].chain]}
+                  </span>
+                  <span className="detail-panel__address">
+                    {panelRentalSpots[0].address}
+                  </span>
+                  <a
+                    className="detail-panel__maps-link"
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(panelRentalSpots[0].address)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Google Maps ↗
+                  </a>
+                </div>
+                <button
+                  className="detail-panel__close"
+                  onClick={() => setSelectedItem(null)}
+                  aria-label="閉じる"
+                >
+                  ✕
+                </button>
+              </div>
+            )}
+            <div className="detail-panel__scroll">
+              {panelRentalSpots.map((spot, i) => (
+                <div
+                  key={spot.id}
+                  className={i > 0 ? "detail-panel__divider" : ""}
+                >
+                  <RentalDetail
+                    spot={spot}
+                    onClose={() => setSelectedItem(null)}
+                    hideVenue={panelRentalSpots.length > 1}
+                  />
+                </div>
+              ))}
+            </div>
+          </aside>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function RentalDetail({ spot, onClose, hideVenue }: { spot: RentalSpot; onClose: () => void; hideVenue?: boolean }) {
+  const chainLabel = RENTAL_CHAIN_LABELS[spot.chain] ?? spot.chain;
+  const chainColor = spot.chain && spot.chain !== 'other' 
+    ? (spot.chain === 'katsuatsu' ? '#e63946'
+      : spot.chain === 'kidsland-us' ? '#f4a261'
+      : spot.chain === 'cote-dazur' ? '#2a9d8f'
+      : spot.chain === 'beyblade-bar-tokyo' ? '#e9c46a'
+      : spot.chain === 'katori-jinja' ? '#78909c'
+      : spot.chain === 'hotel-monday' ? '#ab47bc'
+      : spot.chain === 'round1-spoccha' ? '#457b9d'
+      : '#78909c')
+    : '#78909c';
+
+  return (
+    <div className="rental-detail__content">
+      <button
+        className="event-detail__close"
+        onClick={onClose}
+        aria-label="閉じる"
+      >
+        ✕
+      </button>
+
+      {!hideVenue && (
+        <div className="ed-header">
+          <span className="rental-detail__chain" style={{ background: chainColor }}>
+            {chainLabel}
+          </span>
+          <h1 className="rental-detail__name">{spot.name}</h1>
+        </div>
+      )}
+
+      {!hideVenue && (
+        <div className="rental-detail__section">
+          <p className="rental-detail__address">{spot.address}</p>
+          {spot.phone && <p className="rental-detail__phone">📞 {spot.phone}</p>}
+        </div>
+      )}
+
+      <div className="rental-detail__actions">
+        <a
+          className="rental-detail__btn rental-detail__btn--primary"
+          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.address)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Maps で開く
+        </a>
       </div>
     </div>
   );

@@ -347,6 +347,39 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* ===== Filter - Display Toggle ===== */
+.filter-section--toggle {
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.filter-toggle-group {
+  display: flex;
+  gap: 16px;
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s;
+}
+.filter-toggle:hover {
+  color: var(--text-primary);
+}
+.filter-toggle input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
 /* ===== Event List ===== */
 .event-list {
   overflow-y: auto;
@@ -465,6 +498,145 @@ body {
 }
 .marker-label::before {
   display: none !important;
+}
+
+/* ===== Rental Spot Markers (四角マーカー) ===== */
+.rental-marker-wrapper {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 600;
+}
+
+.rental-marker {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #111;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rental-marker:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.rental-marker--selected {
+  box-shadow: 0 0 0 3px #fff, 0 2px 8px rgba(0,0,0,0.5);
+  transform: translate(-50%, -50%) scale(1.4);
+  z-index: 1000;
+}
+
+.rental-popup .popup-badge {
+  font-size: 9px;
+  padding: 1px 6px;
+  margin-right: 6px;
+  border-radius: 10px;
+}
+
+/* ===== Rental Detail Panel ===== */
+.rental-detail__content {
+  padding: 16px;
+}
+.rental-detail__header {
+  margin-bottom: 12px;
+}
+.rental-detail__chain {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 0.03em;
+}
+.rental-detail__name {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+.rental-detail__address {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+.rental-detail__phone {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.rental-detail__section {
+  margin-bottom: 12px;
+}
+.rental-detail__section-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.rental-detail__section-value {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+.rental-detail__maps-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, color 0.15s;
+}
+.rental-detail__maps-link:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+.rental-detail__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+.rental-detail__btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+.rental-detail__btn:hover {
+  background: var(--border);
+  color: var(--text-primary);
+}
+.rental-detail__btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.rental-detail__btn--primary:hover {
+  background: #c1121f;
 }
 
 /* Popup — ダークテーマ（サイドバーに合わせる） */

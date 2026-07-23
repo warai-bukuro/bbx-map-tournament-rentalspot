@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { MapContainer, TileLayer, CircleMarker, Popup, Tooltip, useMap, useMapEvents } from 'react-leaflet';
-import L, { type LatLngBounds } from 'leaflet';
+import { MapContainer, TileLayer, CircleMarker, Popup, Tooltip, useMap, useMapEvents, Marker } from 'react-leaflet';
+import L, { type LatLngBounds, DivIcon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const canvasRenderer = L.canvas({ padding: 0.5 });
 const isMobile = window.innerWidth < 768;
-import type { TournamentEvent } from '../types';
-import { getBadgeColor, getBadgeLabel } from '../types';
+import type { TournamentEvent, RentalSpot } from '../types';
+import { getBadgeColor, getBadgeLabel, RENTAL_CHAIN_COLORS, RENTAL_CHAIN_LABELS } from '../types';
 import { formatDate, formatTime } from '../utils/date';
 import { linkify } from '../utils/linkify';
 
@@ -32,8 +32,11 @@ function nearestDate(group: TournamentEvent[]): string {
 
 interface Props {
   events: TournamentEvent[];
+  rentalSpots: RentalSpot[];
+  showRentals: boolean;
   selectedId: string | null;
   onSelect: (event: TournamentEvent) => void;
+  onSelectRental: (spot: RentalSpot) => void;
   flyZoom: boolean;
 }
 
@@ -337,7 +340,114 @@ function Markers({ groups, selectedId, onSelect }: MarkersProps) {
   );
 }
 
-export function MapView({ events, selectedId, onSelect, flyZoom }: Props) {
+/** 住所から緯度経度を固定小数点文字列にして同座標グループのキーにする */
+function rentalLocKey(e: RentalSpot) {
+  return `${e.id}-${e.lat?.toFixed(5) ?? 0},${e.lng?.toFixed(5) ?? 0}`;
+}
+
+function createRentalIcon(color: string, isSelected: boolean) {
+  const size = isSelected ? 20 : 14;
+  const borderWidth = isSelected ? 4 : 2;
+  return new DivIcon({
+    html: `<div style="width: ${size}px; height: ${size}px; background: ${color}; border: ${borderWidth}px solid #111; border-radius: 3px; box-shadow: 0 1px 4px rgba(0,0,0,0.4); transform: translate(-50%, -50%);"></div>`,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    className: 'rental-div-icon',
+  });
+}
+
+/** レンタル店舗マーカー（四角マーカーで区別） */
+interface RentalMarkersProps {
+  spots: RentalSpot[];
+  selectedId: string | null;
+  onSelect: (spot: RentalSpot) => void;
+}
+
+function RentalMarkers({ spots, selectedId, onSelect }: RentalMarkersProps) {
+  const [bounds, setBounds] = useState<LatLngBounds | null>(null);
+
+  useMapEvents({
+    moveend(e) { setBounds(e.target.getBounds()); },
+    zoomend(e) { setBounds(e.target.getBounds()); },
+    load(e)    { setBounds(e.target.getBounds()); },
+  });
+
+  const map = useMap();
+  useEffect(() => { setBounds(map.getBounds()); }, [map]);
+
+  const visible = useMemo(() => {
+    if (!bounds) return spots.filter(s => s.lat !== null && s.lng !== null);
+    const pad = bounds.pad(0.1);
+    return spots.filter(s => s.lat !== null && s.lng !== null && pad.contains([s.lat, s.lng]));
+  }, [spots, bounds]);
+
+  return (
+    <>
+      {visible.map(spot => {
+        const isSelected = spot.id === selectedId;
+        const color = RENTAL_CHAIN_COLORS[spot.chain] ?? '#78909c';
+
+        return (
+          <Marker
+            key={rentalLocKey(spot)}
+            position={[spot.lat!, spot.lng!]}
+            icon={createRentalIcon(color, isSelected)}
+            eventHandlers={{ click: () => onSelect(spot) }}
+          >
+            <Tooltip
+              permanent
+              direction="top"
+              offset={[0, -14]}
+              className="marker-label"
+            >
+              {RENTAL_CHAIN_LABELS[spot.chain] ?? spot.chain}
+            </Tooltip>
+            <Popup minWidth={isMobile ? window.innerWidth - 24 : 240} maxHeight={400}>
+              <RentalPopupContent spot={spot} onSelect={onSelect} />
+            </Popup>
+          </Marker>
+        );
+      })}
+    </>
+  );
+}
+
+/** レンタル店舗ポップアップ */
+function RentalPopupContent({ spot, onSelect }: { spot: RentalSpot; onSelect: (s: RentalSpot) => void }) {
+  const chainLabel = RENTAL_CHAIN_LABELS[spot.chain] ?? spot.chain;
+  const color = RENTAL_CHAIN_COLORS[spot.chain] ?? '#78909c';
+
+  return (
+    <div className="map-popup rental-popup">
+      <p className="popup-venue">
+        <span className="popup-badge" style={{ background: color }}>{chainLabel}</span>
+        {spot.name}
+      </p>
+      <p className="popup-address">{spot.address}</p>
+      {spot.phone && (
+        <p className="popup-address">📞 {spot.phone}</p>
+      )}
+      <a
+        className="popup-maps-link"
+        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.address)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Google Maps ↗
+      </a>
+      <div className="popup-detail__actions">
+        <button
+          className="popup-detail__link popup-detail__link--panel"
+          onClick={e => { e.stopPropagation(); onSelect(spot); }}
+        >
+          右パネルで開く
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export function MapView({ events, rentalSpots, showRentals, selectedId, onSelect, onSelectRental, flyZoom }: Props) {
   const groups = useMemo(() => {
     const map = new Map<string, TournamentEvent[]>();
     for (const e of events) {
@@ -364,6 +474,9 @@ export function MapView({ events, selectedId, onSelect, flyZoom }: Props) {
       <FlyToSelected events={events} selectedId={selectedId} flyZoom={flyZoom} />
       <LocateButton />
       <Markers groups={groups} selectedId={selectedId} onSelect={onSelect} />
+      {showRentals && rentalSpots.length > 0 && (
+        <RentalMarkers spots={rentalSpots} selectedId={selectedId} onSelect={onSelectRental} />
+      )}
     </MapContainer>
   );
 }

@@ -181,3 +181,74 @@ export function mapEventType(apiEvent: ApiEvent): EventType {
   const key = apiEvent.event_type_open_name || apiEvent.event_type_name;
   return TYPE_NAME_MAP[key] ?? 'other';
 }
+
+/** レンタル店舗チェーン */
+export type RentalChain =
+  | 'katsuatsu'
+  | 'kidsland-us'
+  | 'cote-dazur'
+  | 'beyblade-bar-tokyo'
+  | 'katori-jinja'
+  | 'hotel-monday'
+  | 'round1-spoccha'
+  | 'other';
+
+export interface RentalSpot {
+  id: string;
+  name: string;
+  chain: RentalChain;
+  address: string;
+  prefecture: string;
+  phone?: string;
+  lat: number | null;
+  lng: number | null;
+}
+
+/** レンタル店舗データ全体（JSONから読み込む形式） */
+export interface RentalSpotsData {
+  fetchedAt: string;
+  source: string;
+  chainColors: Record<RentalChain, string>;
+  spots: RentalSpot[];
+}
+
+export const RENTAL_CHAIN_LABELS: Record<RentalChain, string> = {
+  'katsuatsu': '快活クラブ',
+  'kidsland-us': 'キッズランドUS',
+  'cote-dazur': 'コート・ダジュール',
+  'beyblade-bar-tokyo': 'BEYBLADE BAR TOKYO',
+  'katori-jinja': '香取神社',
+  'hotel-monday': 'hotel MONday',
+  'round1-spoccha': 'ラウンドワン スポッチャ',
+  'other': 'その他',
+};
+
+export const RENTAL_CHAIN_COLORS: Record<RentalChain, string> = {
+  'katsuatsu': '#e63946',
+  'kidsland-us': '#f4a261',
+  'cote-dazur': '#2a9d8f',
+  'beyblade-bar-tokyo': '#e9c46a',
+  'katori-jinja': '#78909c',
+  'hotel-monday': '#ab47bc',
+  'round1-spoccha': '#457b9d',
+  'other': '#78909c',
+};
+
+/** 都道府県を住所から抽出 */
+export function extractPrefecture(address: string): string {
+  const match = address.match(/^(北海道|青森県|岩手県|宮城県|秋田県|山形県|福島県|茨城県|栃木県|群馬県|埼玉県|千葉県|東京都|神奈川県|新潟県|富山県|石川県|福井県|山梨県|長野県|岐阜県|静岡県|愛知県|三重県|滋賀県|京都府|大阪府|兵庫県|奈良県|和歌山県|鳥取県|島根県|岡山県|広島県|山口県|徳島県|香川県|愛媛県|高知県|福岡県|佐賀県|長崎県|熊本県|大分県|宮崎県|鹿児島県|沖縄県)/);
+  return match ? match[1] : '';
+}
+
+/** マーカー共通インターフェース（イベント・店舗共通で扱う用） */
+export interface MapMarker {
+  id: string;
+  type: 'event' | 'rental';
+  lat: number;
+  lng: number;
+  label: string;
+  color: string;
+  chain?: RentalChain;
+  eventType?: EventType;
+  grade?: TournamentGrade;
+}

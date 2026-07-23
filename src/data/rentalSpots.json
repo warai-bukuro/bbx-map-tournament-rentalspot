@@ -1,0 +1,4515 @@
+{
+  "fetchedAt": "2026-07-23T14:56:29.784Z",
+  "source": "https://beyblade.takaratomy.co.jp/beyblade-x/news/rentalspot.html",
+  "chainColors": {
+    "katsuatsu": "#e63946",
+    "kidsland-us": "#f4a261",
+    "cote-dazur": "#2a9d8f",
+    "beyblade-bar-tokyo": "#e9c46a",
+    "katori-jinja": "#78909c",
+    "hotel-monday": "#ab47bc",
+    "round1-spoccha": "#457b9d"
+  },
+  "spots": [
+    {
+      "id": "1",
+      "name": "快活クラブ 旭川永山店",
+      "chain": "katsuatsu",
+      "address": "北海道旭川市永山7条4-4-14",
+      "phone": "0166-40-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "2",
+      "name": "快活クラブ 旭川大町店",
+      "chain": "katsuatsu",
+      "address": "北海道旭川市大町1条3-14-13",
+      "phone": "0166-50-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "3",
+      "name": "快活クラブ 釧路木場店",
+      "chain": "katsuatsu",
+      "address": "北海道釧路郡釧路町木場1-3-1",
+      "phone": "0154-39-2588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "4",
+      "name": "キッズランドUS 札幌厚別店",
+      "chain": "kidsland-us",
+      "address": "北海道札幌市厚別区厚別西四条2丁目8-7スーパーセンタートライアル厚別店2F",
+      "phone": "070-5451-2348",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "5",
+      "name": "快活クラブ 厚別東店",
+      "chain": "katsuatsu",
+      "address": "北海道札幌市厚別区厚別東4条7-2-1",
+      "phone": "011-809-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "6",
+      "name": "快活クラブ 札幌大谷地店",
+      "chain": "katsuatsu",
+      "address": "北海道札幌市厚別区大谷地東2-1-7　AOKI2F",
+      "phone": "011-890-1888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "7",
+      "name": "快活クラブ 札幌清田店",
+      "chain": "katsuatsu",
+      "address": "北海道札幌市清田区清田2条1-3-5",
+      "phone": "011-887-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "8",
+      "name": "快活クラブ 札幌狸小路店",
+      "chain": "katsuatsu",
+      "address": "北海道札幌市中央区南2条西4-1札幌ナナイロ6F",
+      "phone": "011-200-7288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "9",
+      "name": "快活クラブ すすきの店",
+      "chain": "katsuatsu",
+      "address": "北海道札幌市中央区南四条西3-3　第一グリーンビル9F",
+      "phone": "011-520-3188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "10",
+      "name": "快活クラブ 北42条店",
+      "chain": "katsuatsu",
+      "address": "北海道札幌市東区北42条東7-1-1　2F",
+      "phone": "011-733-9188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "11",
+      "name": "快活クラブ 札幌環状通東店",
+      "chain": "katsuatsu",
+      "address": "北海道札幌市東区本町2条2-3-15",
+      "phone": "011-789-4888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "12",
+      "name": "快活クラブ 札幌西岡店",
+      "chain": "katsuatsu",
+      "address": "北海道札幌市豊平区西岡3条4-2-10",
+      "phone": "011-858-3088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "13",
+      "name": "快活クラブ 函館昭和店",
+      "chain": "katsuatsu",
+      "address": "北海道函館市昭和3-31-12",
+      "phone": "0138-34-7188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "14",
+      "name": "快活クラブ 北見店",
+      "chain": "katsuatsu",
+      "address": "北海道北見市西富町2-10-2",
+      "phone": "0157-69-1588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "15",
+      "name": "快活クラブ 弘前店",
+      "chain": "katsuatsu",
+      "address": "青森県弘前市和泉2-7-7",
+      "phone": "0172-29-4288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "16",
+      "name": "快活クラブ 青森観光通り店",
+      "chain": "katsuatsu",
+      "address": "青森県青森市浦町奥野624",
+      "phone": "017-732-4188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "17",
+      "name": "快活クラブ 八戸沼館店",
+      "chain": "katsuatsu",
+      "address": "青森県八戸市沼館4-1-39",
+      "phone": "0178-73-3988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "18",
+      "name": "快活クラブ 水沢店",
+      "chain": "katsuatsu",
+      "address": "岩手県奥州市水沢佐倉河五反町57",
+      "phone": "0197-22-8688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "19",
+      "name": "快活クラブ 花巻店",
+      "chain": "katsuatsu",
+      "address": "岩手県花巻市下似内第17地割91",
+      "phone": "0198-23-1488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "20",
+      "name": "快活クラブ 盛岡上堂店",
+      "chain": "katsuatsu",
+      "address": "岩手県盛岡市上堂1-19-67",
+      "phone": "019-601-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "21",
+      "name": "快活クラブ 盛岡大通店",
+      "chain": "katsuatsu",
+      "address": "岩手県盛岡市大通2-6-8　セントラルガーデンスクエア1～3F",
+      "phone": "019-604-6488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "22",
+      "name": "快活クラブ 盛岡バイパス店",
+      "chain": "katsuatsu",
+      "address": "岩手県盛岡市東仙北2-10-30",
+      "phone": "019-656-4388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "23",
+      "name": "快活クラブ 北上店",
+      "chain": "katsuatsu",
+      "address": "岩手県北上市有田町1-45",
+      "phone": "0197-62-0788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "24",
+      "name": "快活クラブ 大河原店",
+      "chain": "katsuatsu",
+      "address": "宮城県柴田郡大河原町新南59-1",
+      "phone": "0224-53-0308",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "25",
+      "name": "快活クラブ 石巻中里店",
+      "chain": "katsuatsu",
+      "address": "宮城県石巻市南中里2-9-54",
+      "phone": "0225-92-1488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "26",
+      "name": "快活クラブ 東仙台店",
+      "chain": "katsuatsu",
+      "address": "宮城県仙台市宮城野区小鶴3-8-10",
+      "phone": "022-388-1988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "27",
+      "name": "快活クラブ 仙台南小泉店",
+      "chain": "katsuatsu",
+      "address": "宮城県仙台市若林区南小泉2-11-2",
+      "phone": "022-285-6690",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "28",
+      "name": "快活クラブ 仙台一番町店",
+      "chain": "katsuatsu",
+      "address": "宮城県仙台市青葉区一番町4-5-13　2F",
+      "phone": "022-216-5988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "29",
+      "name": "キッズランドUS 仙台錦ケ丘店",
+      "chain": "kidsland-us",
+      "address": "宮城県仙台市青葉区錦ヶ丘1丁目3-1錦ヶ丘ヒルサイドモール3F",
+      "phone": "022-397-6969",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "30",
+      "name": "コート・ダジュール 国分町店",
+      "chain": "cote-dazur",
+      "address": "宮城県仙台市青葉区国分町2-1-3　エーラクフレンディアビルB1F",
+      "phone": "022-212-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "31",
+      "name": "コート・ダジュール 仙台駅西口店",
+      "chain": "cote-dazur",
+      "address": "宮城県仙台市青葉区中央3-6-10　フージャース仙台駅前ビル7F",
+      "phone": "022-713-8988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "32",
+      "name": "コート・ダジュール 仙台泉店",
+      "chain": "cote-dazur",
+      "address": "宮城県仙台市泉区泉中央3-2-7",
+      "phone": "022-771-6288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "33",
+      "name": "快活クラブ 多賀城店",
+      "chain": "katsuatsu",
+      "address": "宮城県多賀城市八幡1-2-34",
+      "phone": "022-361-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "34",
+      "name": "コート・ダジュール 古川店",
+      "chain": "cote-dazur",
+      "address": "宮城県大崎市古川幸町1-4-11",
+      "phone": "0229-22-6707",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "35",
+      "name": "コート・ダジュール 仙台名取店",
+      "chain": "cote-dazur",
+      "address": "宮城県名取市上余田千刈田900-2",
+      "phone": "022-381-7188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "36",
+      "name": "快活クラブ 横手店",
+      "chain": "katsuatsu",
+      "address": "秋田県横手市駅西1丁目3-30",
+      "phone": "0182-35-1988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "37",
+      "name": "快活クラブ 秋田牛島店",
+      "chain": "katsuatsu",
+      "address": "秋田県秋田市牛島西1-1-18",
+      "phone": "018-884-0688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "38",
+      "name": "快活クラブ 秋田新国道店",
+      "chain": "katsuatsu",
+      "address": "秋田県秋田市八橋新川向12-28",
+      "phone": "018-883-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "39",
+      "name": "快活クラブ 大館店",
+      "chain": "katsuatsu",
+      "address": "秋田県大館市清水1-3-13",
+      "phone": "0186-44-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "40",
+      "name": "快活クラブ 山形高堂店",
+      "chain": "katsuatsu",
+      "address": "山形県山形市高堂2-3-11",
+      "phone": "023-647-2988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "41",
+      "name": "快活クラブ 鶴岡店",
+      "chain": "katsuatsu",
+      "address": "山形県鶴岡市宝田2-1-55",
+      "phone": "0235-29-5688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "42",
+      "name": "快活クラブ 天童店",
+      "chain": "katsuatsu",
+      "address": "山形県天童市南町1-6-25",
+      "phone": "023-652-0688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "43",
+      "name": "コート・ダジュール 天童店",
+      "chain": "cote-dazur",
+      "address": "山形県天童市老野森2-9-12",
+      "phone": "023-653-7174",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "44",
+      "name": "快活クラブ 米沢店",
+      "chain": "katsuatsu",
+      "address": "山形県米沢市金池8-1-7",
+      "phone": "0238-37-8168",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "45",
+      "name": "快活クラブ いわき鹿島店",
+      "chain": "katsuatsu",
+      "address": "福島県いわき市鹿島町走熊小神山66-2",
+      "phone": "0246-46-3788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "46",
+      "name": "快活クラブ いわき平店",
+      "chain": "katsuatsu",
+      "address": "福島県いわき市平谷川瀬1-18-5",
+      "phone": "0246-35-0688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "47",
+      "name": "快活クラブ 会津インター店",
+      "chain": "katsuatsu",
+      "address": "福島県会津若松市町北町上荒久田142　2F",
+      "phone": "0242-37-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "48",
+      "name": "快活クラブ 会津若松店",
+      "chain": "katsuatsu",
+      "address": "福島県会津若松市天神町21-11",
+      "phone": "0242-38-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "49",
+      "name": "快活クラブ 郡山安積店",
+      "chain": "katsuatsu",
+      "address": "福島県郡山市安積2-280",
+      "phone": "024-937-1688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "50",
+      "name": "快活クラブ 郡山桑野店",
+      "chain": "katsuatsu",
+      "address": "福島県郡山市桑野4-2-2",
+      "phone": "024-991-0488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "51",
+      "name": "コート・ダジュール 福島駅前店",
+      "chain": "cote-dazur",
+      "address": "福島県福島市栄町7-32吾妻ビル　2～5F",
+      "phone": "024-525-8488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "52",
+      "name": "快活クラブ 福島南バイパス店",
+      "chain": "katsuatsu",
+      "address": "福島県福島市黒岩字榎平56-1",
+      "phone": "024-544-0988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "53",
+      "name": "快活クラブ 福島北店",
+      "chain": "katsuatsu",
+      "address": "福島県福島市本内北町裏6",
+      "phone": "024-552-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "54",
+      "name": "快活クラブ つくば稲荷前店",
+      "chain": "katsuatsu",
+      "address": "茨城県つくば市稲荷前10-1",
+      "phone": "029-850-3688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "55",
+      "name": "快活クラブ ひたちなか店",
+      "chain": "katsuatsu",
+      "address": "茨城県ひたちなか市市毛810-1",
+      "phone": "029-354-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "56",
+      "name": "キッズランドUS 茨城笠間店",
+      "chain": "kidsland-us",
+      "address": "茨城県笠間市赤坂8笠間ショッピングセンター　2階",
+      "phone": "070-7817-3168",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "57",
+      "name": "コート・ダジュール 牛久店",
+      "chain": "cote-dazur",
+      "address": "茨城県牛久市南5-1-3",
+      "phone": "029-870-2488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "58",
+      "name": "快活クラブ 124号鹿嶋店",
+      "chain": "katsuatsu",
+      "address": "茨城県鹿嶋市鉢形971",
+      "phone": "0299-90-8288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "59",
+      "name": "キッズランドUS 茨城常総店",
+      "chain": "kidsland-us",
+      "address": "茨城県常総市本石下4421-1 メガセンタートライアル石下店 2階",
+      "phone": "070-5035-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "60",
+      "name": "快活クラブ 6号取手店",
+      "chain": "katsuatsu",
+      "address": "茨城県取手市中原町1-18",
+      "phone": "0297-70-5788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "61",
+      "name": "キッズユーエスランド 茨城守谷店",
+      "chain": "kidsland-us",
+      "address": "茨城県守谷市松ヶ丘6丁目6-1アクロスモール守谷2F",
+      "phone": "070-5450-8754",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "62",
+      "name": "快活クラブ 水戸渡里店",
+      "chain": "katsuatsu",
+      "address": "茨城県水戸市渡里町2693-1",
+      "phone": "029-222-2788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "63",
+      "name": "コート・ダジュール 石岡店",
+      "chain": "cote-dazur",
+      "address": "茨城県石岡市東石岡1-9-5",
+      "phone": "0299-28-3888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "64",
+      "name": "快活クラブ 筑西店",
+      "chain": "katsuatsu",
+      "address": "茨城県筑西市玉戸1053-1",
+      "phone": "0296-26-7088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "65",
+      "name": "快活クラブ 土浦荒川沖店",
+      "chain": "katsuatsu",
+      "address": "茨城県土浦市西根南1-1-8",
+      "phone": "029-843-6088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "66",
+      "name": "快活クラブ 那珂店",
+      "chain": "katsuatsu",
+      "address": "茨城県那珂市菅谷5383-4",
+      "phone": "029-352-0488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "67",
+      "name": "快活クラブ 日立店",
+      "chain": "katsuatsu",
+      "address": "茨城県日立市西成沢町3-1-1",
+      "phone": "0294-28-5988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "68",
+      "name": "快活クラブ 宇都宮御幸ヶ原店",
+      "chain": "katsuatsu",
+      "address": "栃木県宇都宮市下川俣町78-6",
+      "phone": "028-613-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "69",
+      "name": "快活クラブ 宇都宮横田店",
+      "chain": "katsuatsu",
+      "address": "栃木県宇都宮市上横田町1302-22",
+      "phone": "028-688-3788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "70",
+      "name": "キッズランドUS 栃木宇都宮店",
+      "chain": "kidsland-us",
+      "address": "栃木県宇都宮市豊郷台2丁目87　ショッピングセンター　ミュゼ2階",
+      "phone": "080-7975-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "71",
+      "name": "快活クラブ 佐野店",
+      "chain": "katsuatsu",
+      "address": "栃木県佐野市浅沼町803",
+      "phone": "0283-27-2988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "72",
+      "name": "コート・ダジュール 小山店",
+      "chain": "cote-dazur",
+      "address": "栃木県小山市東城南1-3-16",
+      "phone": "0285-31-3488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "73",
+      "name": "快活クラブ 50号足利店",
+      "chain": "katsuatsu",
+      "address": "栃木県足利市福富町1085-1",
+      "phone": "0284-74-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "74",
+      "name": "快活クラブ 栃木店",
+      "chain": "katsuatsu",
+      "address": "栃木県栃木市大町22-78",
+      "phone": "0282-20-3188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "75",
+      "name": "キッズランドUS 栃木矢板店",
+      "chain": "kidsland-us",
+      "address": "栃木県矢板市末広町25-1 ベイシア矢板店内1階",
+      "phone": "070-3329-4890",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "76",
+      "name": "快活クラブ 50号笠懸店",
+      "chain": "katsuatsu",
+      "address": "群馬県みどり市笠懸町阿左美2823-3",
+      "phone": "0277-70-7688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "77",
+      "name": "快活クラブ 伊勢崎連取店",
+      "chain": "katsuatsu",
+      "address": "群馬県伊勢崎市連取町2335-7",
+      "phone": "0270-30-1788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "78",
+      "name": "快活クラブ 高崎高関店",
+      "chain": "katsuatsu",
+      "address": "群馬県高崎市高関町366",
+      "phone": "027-310-5688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "79",
+      "name": "快活クラブ 17号高崎倉賀野店",
+      "chain": "katsuatsu",
+      "address": "群馬県高崎市倉賀野町2677-1",
+      "phone": "027-345-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "80",
+      "name": "キッズランドUS 群馬渋川店",
+      "chain": "kidsland-us",
+      "address": "群馬県渋川市行幸田字砂田296ベイシア渋川2階",
+      "phone": "090-8507-2244",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "81",
+      "name": "快活クラブ 新前橋店",
+      "chain": "katsuatsu",
+      "address": "群馬県前橋市小相木町558-1",
+      "phone": "027-280-4588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "82",
+      "name": "快活クラブ 前橋上小出店",
+      "chain": "katsuatsu",
+      "address": "群馬県前橋市上小出町3-41-10",
+      "phone": "027-210-4888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "83",
+      "name": "快活クラブ 407号太田店",
+      "chain": "katsuatsu",
+      "address": "群馬県太田市西矢島町630",
+      "phone": "0276-47-9888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "84",
+      "name": "快活クラブ 太田内ケ島店",
+      "chain": "katsuatsu",
+      "address": "群馬県太田市内ケ島町928-1",
+      "phone": "0276-47-9988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "85",
+      "name": "コート・ダジュール 藤岡店",
+      "chain": "cote-dazur",
+      "address": "群馬県藤岡市藤岡922-1",
+      "phone": "0274-40-8288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "86",
+      "name": "快活クラブ 岩槻店",
+      "chain": "katsuatsu",
+      "address": "埼玉県さいたま市岩槻区南平野5-6-8",
+      "phone": "048-792-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "87",
+      "name": "快活クラブ 大宮三橋店",
+      "chain": "katsuatsu",
+      "address": "埼玉県さいたま市西区三橋5-1600",
+      "phone": "048-620-3888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "88",
+      "name": "快活クラブ 東川口店",
+      "chain": "katsuatsu",
+      "address": "埼玉県さいたま市緑区東大門3-8-6",
+      "phone": "048-812-2888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "89",
+      "name": "快活クラブ 254号上福岡店",
+      "chain": "katsuatsu",
+      "address": "埼玉県ふじみ野市鶴ヶ舞3-1-8",
+      "phone": "049-256-4488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "90",
+      "name": "快活クラブ 越谷蒲生店",
+      "chain": "katsuatsu",
+      "address": "埼玉県越谷市蒲生南町16-11",
+      "phone": "048-961-5788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "91",
+      "name": "快活クラブ 4号越谷店",
+      "chain": "katsuatsu",
+      "address": "埼玉県越谷市七左町6-13-1",
+      "phone": "048-969-0988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "92",
+      "name": "キッズランドUS 埼玉越谷店",
+      "chain": "kidsland-us",
+      "address": "埼玉県越谷市南越谷1丁目2876-1越谷サンシティ5F",
+      "phone": "080-4736-9148",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "93",
+      "name": "快活クラブ ビバモール加須店",
+      "chain": "katsuatsu",
+      "address": "埼玉県加須市下高柳1-29",
+      "phone": "0480-67-4588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "94",
+      "name": "快活クラブ 狭山入間川店",
+      "chain": "katsuatsu",
+      "address": "埼玉県狭山市入間川4-4-6",
+      "phone": "04-2900-2588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "95",
+      "name": "快活クラブ 407号熊谷石原店",
+      "chain": "katsuatsu",
+      "address": "埼玉県熊谷市石原473-4",
+      "phone": "048-529-3188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "96",
+      "name": "キッズランドUS 埼玉熊谷店",
+      "chain": "kidsland-us",
+      "address": "埼玉県熊谷市本石2丁目135イオン熊谷店3F",
+      "phone": "070-5560-7469",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "97",
+      "name": "快活クラブ 戸田店",
+      "chain": "katsuatsu",
+      "address": "埼玉県戸田市笹目3-8-11",
+      "phone": "048-449-6388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "98",
+      "name": "快活クラブ 幸手店",
+      "chain": "katsuatsu",
+      "address": "埼玉県幸手市中3-19-32",
+      "phone": "0480-40-1788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "99",
+      "name": "快活クラブ 17号鴻巣店",
+      "chain": "katsuatsu",
+      "address": "埼玉県鴻巣市天神2-6-37",
+      "phone": "048-544-0888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "100",
+      "name": "快活クラブ 三郷店",
+      "chain": "katsuatsu",
+      "address": "埼玉県三郷市ピアラシティ二丁目2番地5　1F",
+      "phone": "048-949-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "101",
+      "name": "快活クラブ 春日部ユリノキ通り店",
+      "chain": "katsuatsu",
+      "address": "埼玉県春日部市大沼1-69",
+      "phone": "048-731-7588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "102",
+      "name": "快活クラブ 所沢バイパス店",
+      "chain": "katsuatsu",
+      "address": "埼玉県所沢市牛沼433",
+      "phone": "04-2991-7388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "103",
+      "name": "快活クラブ 所沢小手指店",
+      "chain": "katsuatsu",
+      "address": "埼玉県所沢市上新井4-48-18",
+      "phone": "04-2903-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "104",
+      "name": "快活クラブ 上尾日の出店",
+      "chain": "katsuatsu",
+      "address": "埼玉県上尾市日の出3-1",
+      "phone": "048-778-0655",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "105",
+      "name": "快活クラブ 上尾西口駅前店",
+      "chain": "katsuatsu",
+      "address": "埼玉県上尾市柏座1-13-20　2F",
+      "phone": "048-770-1588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "106",
+      "name": "快活クラブ 志木南口駅前店",
+      "chain": "katsuatsu",
+      "address": "埼玉県新座市東北2-30-21　3F",
+      "phone": "048-470-0488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "107",
+      "name": "快活クラブ 新座駅前店",
+      "chain": "katsuatsu",
+      "address": "埼玉県新座市野火止5丁目2-10　シーケー・スクエア5F",
+      "phone": "048-480-4488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "108",
+      "name": "快活クラブ 新座店",
+      "chain": "katsuatsu",
+      "address": "埼玉県新座市野火止8-4-43",
+      "phone": "048-489-4888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "109",
+      "name": "快活クラブ 川口東口駅前店",
+      "chain": "katsuatsu",
+      "address": "埼玉県川口市栄町3-1-16　イート川口7F",
+      "phone": "048-240-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "110",
+      "name": "快活クラブ 川口朝日店",
+      "chain": "katsuatsu",
+      "address": "埼玉県川口市朝日4-13",
+      "phone": "048-228-3838",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "111",
+      "name": "キッズランドUS MAX 川越南古谷店",
+      "chain": "kidsland-us",
+      "address": "埼玉県川越市泉町2-1ウニクス南古谷 アネックス",
+      "phone": "070-5450-9730",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "112",
+      "name": "快活クラブ 草加店",
+      "chain": "katsuatsu",
+      "address": "埼玉県草加市西町632-5",
+      "phone": "048-920-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "113",
+      "name": "快活クラブ 朝霞駅東口店",
+      "chain": "katsuatsu",
+      "address": "埼玉県朝霞市仲町2-1-20　3F",
+      "phone": "048-451-7338",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "114",
+      "name": "快活クラブ 鶴ヶ島インター店",
+      "chain": "katsuatsu",
+      "address": "埼玉県鶴ヶ島市脚折町4-10-5",
+      "phone": "049-272-3988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "115",
+      "name": "快活クラブ 407号東松山店",
+      "chain": "katsuatsu",
+      "address": "埼玉県東松山市六反町15-11",
+      "phone": "0493-21-7588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "116",
+      "name": "快活クラブ 本庄東店",
+      "chain": "katsuatsu",
+      "address": "埼玉県本庄市寿3-4-22",
+      "phone": "0495-27-8588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "117",
+      "name": "快活クラブ 蓮田店",
+      "chain": "katsuatsu",
+      "address": "埼玉県蓮田市関山1-5-8",
+      "phone": "048-765-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "118",
+      "name": "キッズランドUS 千葉ユーカリが丘店",
+      "chain": "kidsland-us",
+      "address": "千葉県佐倉市ユーカリが丘3丁目2番1号\n                                            アクアユーカリ1階",
+      "phone": "070-5451-2387",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "119",
+      "name": "快活クラブ 佐倉志津店",
+      "chain": "katsuatsu",
+      "address": "千葉県佐倉市井野1475",
+      "phone": "043-460-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "120",
+      "name": "快活クラブ 佐倉寺崎店",
+      "chain": "katsuatsu",
+      "address": "千葉県佐倉市寺崎北5-1-1",
+      "phone": "043-483-2048",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "121",
+      "name": "快活クラブ 市原店",
+      "chain": "katsuatsu",
+      "address": "千葉県市原市君塚1-33-1",
+      "phone": "0436-25-0988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "122",
+      "name": "快活クラブ 市川駅前店",
+      "chain": "katsuatsu",
+      "address": "千葉県市川市市川1-4-17　アクティオーレ市川4F",
+      "phone": "047-325-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "123",
+      "name": "コート・ダジュール 本八幡駅前店",
+      "chain": "cote-dazur",
+      "address": "千葉県市川市八幡2-16-6　八幡旗ビルディング3F",
+      "phone": "047-302-7588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "124",
+      "name": "キッズランドUS 松戸常盤平店",
+      "chain": "kidsland-us",
+      "address": "千葉県松戸市常盤平3-11-1西友常盤平4階",
+      "phone": "070-5518-9697",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "125",
+      "name": "快活クラブ 松戸馬橋店",
+      "chain": "katsuatsu",
+      "address": "千葉県松戸市西馬橋2-1-1",
+      "phone": "047-343-3588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "126",
+      "name": "快活クラブ 成田土屋店",
+      "chain": "katsuatsu",
+      "address": "千葉県成田市ウイング土屋90",
+      "phone": "0476-23-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "127",
+      "name": "快活クラブ 成田ニュータウン店",
+      "chain": "katsuatsu",
+      "address": "千葉県成田市飯田町161-60",
+      "phone": "0476-20-8988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "128",
+      "name": "快活クラブ 16号千葉北店",
+      "chain": "katsuatsu",
+      "address": "千葉県千葉市稲毛区園生町374-1",
+      "phone": "043-290-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "129",
+      "name": "快活クラブ 稲毛駅東口店",
+      "chain": "katsuatsu",
+      "address": "千葉県千葉市稲毛区小仲台2-8-17",
+      "phone": "043-290-5888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "130",
+      "name": "キッズランドUS 千葉フレスポ稲毛店",
+      "chain": "kidsland-us",
+      "address": "千葉県千葉市稲毛区長沼原町731ー17フレスポ稲毛店イーストモール1階",
+      "phone": "070-6523-4002",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "131",
+      "name": "快活クラブ 千葉都賀店",
+      "chain": "katsuatsu",
+      "address": "千葉県千葉市若葉区都賀3-24-7",
+      "phone": "043-233-6038",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "132",
+      "name": "快活クラブ 16号浜野店",
+      "chain": "katsuatsu",
+      "address": "千葉県千葉市中央区村田町893-96",
+      "phone": "043-305-9488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "133",
+      "name": "快活クラブ 千葉道場店",
+      "chain": "katsuatsu",
+      "address": "千葉県千葉市中央区道場北2-19-16",
+      "phone": "043-202-5988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "134",
+      "name": "快活クラブ 海浜幕張店",
+      "chain": "katsuatsu",
+      "address": "千葉県千葉市美浜区ひび野1-9　スーク海浜幕張　4F",
+      "phone": "043-213-6888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "135",
+      "name": "快活クラブ 船橋夏見台店",
+      "chain": "katsuatsu",
+      "address": "千葉県船橋市夏見台3-9-25　2F",
+      "phone": "047-429-5388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "136",
+      "name": "快活クラブ 船橋競馬場駅前店",
+      "chain": "katsuatsu",
+      "address": "千葉県船橋市宮本9-4-3",
+      "phone": "047-495-4888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "137",
+      "name": "快活クラブ 本中山店",
+      "chain": "katsuatsu",
+      "address": "千葉県船橋市本中山5-9",
+      "phone": "047-302-3388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "138",
+      "name": "キッズランドUS 千葉柏店",
+      "chain": "kidsland-us",
+      "address": "千葉県柏市十余二249-5M.E.M.柏店2F",
+      "phone": "080-7958-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "139",
+      "name": "快活クラブ 柏松ヶ崎店",
+      "chain": "katsuatsu",
+      "address": "千葉県柏市大山台1-50-2",
+      "phone": "04-7135-7688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "140",
+      "name": "快活クラブ 八千代店",
+      "chain": "katsuatsu",
+      "address": "千葉県八千代市大和田新田406-5",
+      "phone": "047-450-3388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "141",
+      "name": "キッズランドUS 千葉富里店",
+      "chain": "kidsland-us",
+      "address": "千葉県富里市七栄532 ベイシア富里店内1階",
+      "phone": "080-7269-4944",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "142",
+      "name": "快活クラブ 富里インター店",
+      "chain": "katsuatsu",
+      "address": "千葉県富里市七栄1005-5",
+      "phone": "0476-91-5488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "143",
+      "name": "快活クラブ 茂原東部台店",
+      "chain": "katsuatsu",
+      "address": "千葉県茂原市木崎2274-1",
+      "phone": "0475-20-2788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "144",
+      "name": "快活クラブ 木更津店",
+      "chain": "katsuatsu",
+      "address": "千葉県木更津市請西1-17-8",
+      "phone": "0438-30-1088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "145",
+      "name": "快活クラブ 16号野田店",
+      "chain": "katsuatsu",
+      "address": "千葉県野田市鶴奉34-34",
+      "phone": "04-7126-5888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "146",
+      "name": "快活クラブ 羽村市役所通り店",
+      "chain": "katsuatsu",
+      "address": "東京都羽村市栄町2-14-5",
+      "phone": "042-578-5488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "147",
+      "name": "コート・ダジュール 千歳烏山店",
+      "chain": "cote-dazur",
+      "address": "東京都世田谷区南烏山4-12-7　クレアビル3F",
+      "phone": "03-5969-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "148",
+      "name": "キッズランドUS 東京ひばりヶ丘店",
+      "chain": "kidsland-us",
+      "address": "東京都西東京市住吉町3丁目9-85F西友ひばりヶ丘店5F",
+      "phone": "070-3120-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "149",
+      "name": "快活クラブ 千住堀切橋店",
+      "chain": "katsuatsu",
+      "address": "東京都足立区千住曙町21-13",
+      "phone": "03-5244-6788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "150",
+      "name": "コート・ダジュール 多摩ニュータウン店",
+      "chain": "cote-dazur",
+      "address": "東京都多摩市乞田1028-1",
+      "phone": "042-357-5688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "151",
+      "name": "快活クラブ 大森駅前店",
+      "chain": "katsuatsu",
+      "address": "東京都大田区山王2-4-1　大森駅前ビル5F",
+      "phone": "03-5718-1488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "152",
+      "name": "快活クラブ 調布国領店",
+      "chain": "katsuatsu",
+      "address": "東京都調布市国領町1-26-6",
+      "phone": "042-443-3288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "153",
+      "name": "コート・ダジュール 仙川店",
+      "chain": "cote-dazur",
+      "address": "東京都調布市仙川町1-15-1　坂口仙川ビル1F",
+      "phone": "03-5315-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "154",
+      "name": "快活クラブ 東久留米滝山店",
+      "chain": "katsuatsu",
+      "address": "東京都東久留米市滝山4丁目12-7",
+      "phone": "042-470-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "155",
+      "name": "快活クラブ 東村山店",
+      "chain": "katsuatsu",
+      "address": "東京都東村山市本町2-12-7",
+      "phone": "042-399-1088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "156",
+      "name": "快活クラブ 東大和店",
+      "chain": "katsuatsu",
+      "address": "東京都東大和市立野1-2-1",
+      "phone": "042-590-4688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "157",
+      "name": "快活クラブ 八王子大和田店",
+      "chain": "katsuatsu",
+      "address": "東京都八王子市大和田町2-16-11",
+      "phone": "042-631-9488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "158",
+      "name": "快活クラブ 八王子本店",
+      "chain": "katsuatsu",
+      "address": "東京都八王子市中町5-1　2F",
+      "phone": "042-620-4288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "159",
+      "name": "コート・ダジュール 目黒駅西口店",
+      "chain": "cote-dazur",
+      "address": "東京都品川区上大崎2-27-1　サンフェリスタ目黒6F",
+      "phone": "03-5436-2688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "160",
+      "name": "コート・ダジュール 大井町東口店",
+      "chain": "cote-dazur",
+      "address": "東京都品川区東大井5-3-7プラザヤワタヤ4・5F",
+      "phone": "03-5781-9888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "161",
+      "name": "キッズランドUS 東京大森店",
+      "chain": "kidsland-us",
+      "address": "東京都品川区南大井6丁目27-25西友大森店3F",
+      "phone": "070-5073-5726",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "162",
+      "name": "キッズユーエスランド 東京吉祥寺店",
+      "chain": "kidsland-us",
+      "address": "東京都武蔵野市吉祥寺本町1丁目12-10西友吉祥寺店6F",
+      "phone": "080-4432-2442",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "163",
+      "name": "快活クラブ 池袋サンシャイン60通り店",
+      "chain": "katsuatsu",
+      "address": "東京都豊島区東池袋1-29-1　5F",
+      "phone": "03-5957-0688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "164",
+      "name": "コート・ダジュール 自由が丘駅前店",
+      "chain": "cote-dazur",
+      "address": "東京都目黒区自由が丘2-10-8　自由が丘エヌケービル4F",
+      "phone": "03-5726-3188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "165",
+      "name": "快活クラブ 練馬笹目通り店",
+      "chain": "katsuatsu",
+      "address": "東京都練馬区南田中5-3-17",
+      "phone": "03-5923-0588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "166",
+      "name": "快活クラブ 伊勢原店",
+      "chain": "katsuatsu",
+      "address": "神奈川県伊勢原市板戸569-1",
+      "phone": "0463-97-2188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "167",
+      "name": "キッズランドUS 横浜希望が丘店",
+      "chain": "kidsland-us",
+      "address": "神奈川県横浜市旭区中希望が丘177-1K1ショッピングセンター3F",
+      "phone": "070-6519-7636",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "168",
+      "name": "快活クラブ 磯子駅前店",
+      "chain": "katsuatsu",
+      "address": "神奈川県横浜市磯子区森1-6-23",
+      "phone": "045-750-5688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "169",
+      "name": "コート・ダジュール 金沢文庫店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市金沢区釜利谷東2-5-5",
+      "phone": "045-791-1888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "170",
+      "name": "快活クラブ 横浜芹が谷店",
+      "chain": "katsuatsu",
+      "address": "神奈川県横浜市港南区芹が谷3-34-20　2F",
+      "phone": "045-820-2288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "171",
+      "name": "コート・ダジュール 港南台店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市港南区港南台6-12-2",
+      "phone": "045-836-2888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "172",
+      "name": "快活クラブ 新横浜店",
+      "chain": "katsuatsu",
+      "address": "神奈川県横浜市港北区新横浜2-3-5　SR第2ビル",
+      "phone": "045-478-0288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "173",
+      "name": "コート・ダジュール 新横浜駅前店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市港北区新横浜3-6-2　新横浜西武ビル9F",
+      "phone": "045-470-8388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "174",
+      "name": "コート・ダジュール 日吉店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市港北区日吉本町1-5-4",
+      "phone": "045-566-7888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "175",
+      "name": "コート・ダジュール 横浜鶴屋町店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市神奈川区鶴屋町2-13-7　第7安田ビルB1",
+      "phone": "045-311-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "176",
+      "name": "コート・ダジュール 青葉台店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市青葉区榎が丘4-6",
+      "phone": "045-988-0288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "177",
+      "name": "コート・ダジュール 元町・中華街店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市中区山下町61　山下ビル2F",
+      "phone": "045-228-6888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "178",
+      "name": "コート・ダジュール 鶴見駅西口店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市鶴見区豊岡町2-2　7F",
+      "phone": "045-580-0288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "179",
+      "name": "コート・ダジュール センター南店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市都筑区茅ヶ崎中央3-25　aune港北3F",
+      "phone": "045-948-4188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "180",
+      "name": "コート・ダジュール すみれが丘店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市都筑区牛久保1-19-5",
+      "phone": "045-913-8588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "181",
+      "name": "コート・ダジュール センター北店",
+      "chain": "cote-dazur",
+      "address": "神奈川県横浜市都筑区中川中央1-30-1　プレミアヨコハマ6F",
+      "phone": "045-914-3688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "182",
+      "name": "快活クラブ 横浜北山田店",
+      "chain": "katsuatsu",
+      "address": "神奈川県横浜市都筑区北山田3-1-50-1F",
+      "phone": "045-593-6348",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "183",
+      "name": "快活クラブ 海老名駅前店",
+      "chain": "katsuatsu",
+      "address": "神奈川県海老名市中央1-4-31　2F",
+      "phone": "046-236-0688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "184",
+      "name": "コート・ダジュール 海老名店",
+      "chain": "cote-dazur",
+      "address": "神奈川県海老名市中央2-8-6",
+      "phone": "046-236-5188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "185",
+      "name": "キッズランドUS 神奈川厚木店",
+      "chain": "kidsland-us",
+      "address": "神奈川県厚木市中町1丁目5-10 厚木ガーデンシティー 6階",
+      "phone": "070-5450-7615",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "186",
+      "name": "快活クラブ 本厚木駅前店",
+      "chain": "katsuatsu",
+      "address": "神奈川県厚木市中町3-4-22　4F",
+      "phone": "046-297-3988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "187",
+      "name": "コート・ダジュール 厚木林店",
+      "chain": "cote-dazur",
+      "address": "神奈川県厚木市林5-12-10",
+      "phone": "046-295-2888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "188",
+      "name": "快活クラブ 厚木林店",
+      "chain": "katsuatsu",
+      "address": "神奈川県厚木市林5-23-5",
+      "phone": "046-294-2888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "189",
+      "name": "快活クラブ 座間店",
+      "chain": "katsuatsu",
+      "address": "神奈川県座間市相模が丘2-1-29",
+      "phone": "046-254-1088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "190",
+      "name": "快活クラブ 小田原鴨宮店",
+      "chain": "katsuatsu",
+      "address": "神奈川県小田原市鴨宮816-1",
+      "phone": "0465-47-8258",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "191",
+      "name": "コート・ダジュール 小田原鴨宮店",
+      "chain": "cote-dazur",
+      "address": "神奈川県小田原市中里123-11",
+      "phone": "0465-45-6888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "192",
+      "name": "コート・ダジュール 鷺沼店",
+      "chain": "cote-dazur",
+      "address": "神奈川県川崎市宮前区鷺沼3-1-5",
+      "phone": "044-870-6388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "193",
+      "name": "コート・ダジュール 京急川崎駅前店",
+      "chain": "cote-dazur",
+      "address": "神奈川県川崎市川崎区駅前本町10-5　クリエ川崎4F",
+      "phone": "044-245-2388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "194",
+      "name": "快活クラブ 京急川崎駅前店",
+      "chain": "katsuatsu",
+      "address": "神奈川県川崎市川崎区砂子1-3-7　3F",
+      "phone": "044-211-3588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "195",
+      "name": "コート・ダジュール 川崎仲見世通り店",
+      "chain": "cote-dazur",
+      "address": "神奈川県川崎市川崎区砂子2-2-3　第2旭屋ビル",
+      "phone": "044-221-3888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "196",
+      "name": "コート・ダジュール 武蔵小杉北口店",
+      "chain": "cote-dazur",
+      "address": "神奈川県川崎市中原区小杉町1-403　小杉ビルディングB1F",
+      "phone": "044-739-2388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "197",
+      "name": "コート・ダジュール 武蔵小杉店",
+      "chain": "cote-dazur",
+      "address": "神奈川県川崎市中原区小杉町3-441-17　小杉Mビル2～5F",
+      "phone": "044-738-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "198",
+      "name": "快活クラブ 百合ヶ丘店",
+      "chain": "katsuatsu",
+      "address": "神奈川県川崎市麻生区高石　3-32-6",
+      "phone": "044-969-1088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "199",
+      "name": "コート・ダジュール 相模原星が丘店",
+      "chain": "cote-dazur",
+      "address": "神奈川県相模原市中央区星が丘3-15-8",
+      "phone": "042-704-3788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "200",
+      "name": "快活クラブ 相模原中央店",
+      "chain": "katsuatsu",
+      "address": "神奈川県相模原市中央区清新7-1-4",
+      "phone": "042-704-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "201",
+      "name": "キッズランドUS mini 相模大野店",
+      "chain": "kidsland-us",
+      "address": "神奈川県相模原市南区3-2ボーノ相模大野3F",
+      "phone": "070-5450-8169",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "202",
+      "name": "快活クラブ 古淵駅前店",
+      "chain": "katsuatsu",
+      "address": "神奈川県相模原市南区古淵2-15-1",
+      "phone": "042-768-8688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "203",
+      "name": "快活クラブ 相模大野駅前店",
+      "chain": "katsuatsu",
+      "address": "神奈川県相模原市南区相模大野3-12-10",
+      "phone": "042-701-9388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "204",
+      "name": "快活クラブ 16号相模原大野台店",
+      "chain": "katsuatsu",
+      "address": "神奈川県相模原市南区大野台1-1",
+      "phone": "042-704-2688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "205",
+      "name": "快活クラブ 橋本店",
+      "chain": "katsuatsu",
+      "address": "神奈川県相模原市緑区橋本8-2-1",
+      "phone": "042-700-5028",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "206",
+      "name": "コート・ダジュール つきみ野店",
+      "chain": "cote-dazur",
+      "address": "神奈川県大和市つきみ野2-8-1",
+      "phone": "046-278-2888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "207",
+      "name": "コート・ダジュール 大和桜ヶ丘本店",
+      "chain": "cote-dazur",
+      "address": "神奈川県大和市福田5679-11",
+      "phone": "046-279-5388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "208",
+      "name": "快活クラブ 大和桜ヶ丘店",
+      "chain": "katsuatsu",
+      "address": "神奈川県大和市福田5683-1",
+      "phone": "046-279-5088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "209",
+      "name": "コート・ダジュール 藤沢六会店",
+      "chain": "cote-dazur",
+      "address": "神奈川県藤沢市亀井野3-10-5",
+      "phone": "0466-80-6288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "210",
+      "name": "快活クラブ 藤沢六会店",
+      "chain": "katsuatsu",
+      "address": "神奈川県藤沢市亀井野3-28-1",
+      "phone": "0466-80-3588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "211",
+      "name": "快活クラブ 藤沢弥勒寺店",
+      "chain": "katsuatsu",
+      "address": "神奈川県藤沢市小塚586-7",
+      "phone": "0466-29-5488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "212",
+      "name": "快活クラブ 湘南台駅前店",
+      "chain": "katsuatsu",
+      "address": "神奈川県藤沢市湘南台2-2-4",
+      "phone": "0466-41-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "213",
+      "name": "コート・ダジュール Luz湘南辻堂店",
+      "chain": "cote-dazur",
+      "address": "神奈川県藤沢市辻堂神台1-2-12　Luz湘南辻堂4F",
+      "phone": "0466-30-4688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "214",
+      "name": "コート・ダジュール 藤沢駅南口店",
+      "chain": "cote-dazur",
+      "address": "神奈川県藤沢市南藤沢20-9",
+      "phone": "0466-55-2388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "215",
+      "name": "快活クラブ 平塚宮松店",
+      "chain": "katsuatsu",
+      "address": "神奈川県平塚市宮松町11-4",
+      "phone": "0463-23-8188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "216",
+      "name": "コート・ダジュール 上越店",
+      "chain": "cote-dazur",
+      "address": "新潟県上越市大字土橋1594-3",
+      "phone": "025-527-6888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "217",
+      "name": "快活クラブ 新潟亀田店",
+      "chain": "katsuatsu",
+      "address": "新潟県新潟市江南区亀田四ツ興野2-1-36",
+      "phone": "025-383-0288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "218",
+      "name": "快活クラブ 新津程島店",
+      "chain": "katsuatsu",
+      "address": "新潟県新潟市秋葉区程島1876",
+      "phone": "0250-21-3488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "219",
+      "name": "快活クラブ 新潟寺尾店",
+      "chain": "katsuatsu",
+      "address": "新潟県新潟市西区寺尾西1-1-5",
+      "phone": "025-264-7188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "220",
+      "name": "快活クラブ 新潟桜木インター店",
+      "chain": "katsuatsu",
+      "address": "新潟県新潟市中央区堀之内南2-19-14",
+      "phone": "025-240-5888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "221",
+      "name": "快活クラブ 新潟赤道店",
+      "chain": "katsuatsu",
+      "address": "新潟県新潟市東区下木戸1-11-1",
+      "phone": "025-256-7088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "222",
+      "name": "コート・ダジュール 新発田店",
+      "chain": "cote-dazur",
+      "address": "新潟県新発田市新栄町3-1-23",
+      "phone": "0254-20-5388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "223",
+      "name": "快活クラブ 新発田店",
+      "chain": "katsuatsu",
+      "address": "新潟県新発田市新栄町3-4-40",
+      "phone": "0254-27-0588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "224",
+      "name": "快活クラブ 長岡川崎店",
+      "chain": "katsuatsu",
+      "address": "新潟県長岡市川崎町862-1",
+      "phone": "0258-38-5088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "225",
+      "name": "快活クラブ 魚津店",
+      "chain": "katsuatsu",
+      "address": "富山県魚津市吉島2-5-23",
+      "phone": "0765-24-0788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "226",
+      "name": "快活クラブ 高岡戸出店",
+      "chain": "katsuatsu",
+      "address": "富山県高岡市戸出伊勢領2493",
+      "phone": "0766-63-8988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "227",
+      "name": "快活クラブ 高岡店",
+      "chain": "katsuatsu",
+      "address": "富山県高岡市向野町6-18-1",
+      "phone": "0766-26-6388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "228",
+      "name": "コート・ダジュール 砺波店",
+      "chain": "cote-dazur",
+      "address": "富山県砺波市中村295-4",
+      "phone": "0763-34-5988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "229",
+      "name": "快活クラブ 富山荒川店",
+      "chain": "katsuatsu",
+      "address": "富山県富山市荒川2-15-32",
+      "phone": "076-405-5688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "230",
+      "name": "快活クラブ 富山掛尾店",
+      "chain": "katsuatsu",
+      "address": "富山県富山市今泉388-1",
+      "phone": "076-425-6888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "231",
+      "name": "快活クラブ 金沢久安店",
+      "chain": "katsuatsu",
+      "address": "石川県金沢市久安3-362",
+      "phone": "076-243-0888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "232",
+      "name": "コート・ダジュール 金沢田上店",
+      "chain": "cote-dazur",
+      "address": "石川県金沢市田上の里1-127　2F",
+      "phone": "076-221-6388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "233",
+      "name": "快活クラブ 金沢福久店",
+      "chain": "katsuatsu",
+      "address": "石川県金沢市福久東1-23-1",
+      "phone": "076-257-4888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "234",
+      "name": "コート・ダジュール 金沢片町店",
+      "chain": "cote-dazur",
+      "address": "石川県金沢市片町1-4-10",
+      "phone": "076-264-4988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "235",
+      "name": "コート・ダジュール 金沢駅前店",
+      "chain": "cote-dazur",
+      "address": "石川県金沢市堀川新町2-22　サンファーストビル7・8F",
+      "phone": "076-223-0288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "236",
+      "name": "コート・ダジュール 小松店",
+      "chain": "cote-dazur",
+      "address": "石川県小松市日の出町4-37-1",
+      "phone": "0761-21-4388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "237",
+      "name": "コート・ダジュール 8号松任店",
+      "chain": "cote-dazur",
+      "address": "石川県白山市田中町290-1　2F",
+      "phone": "076-274-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "238",
+      "name": "コート・ダジュール 野々市矢作店",
+      "chain": "cote-dazur",
+      "address": "石川県野々市市矢作1-169",
+      "phone": "076-246-2188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "239",
+      "name": "コート・ダジュール 武生店",
+      "chain": "cote-dazur",
+      "address": "福井県越前市小松1-7-25",
+      "phone": "0778-25-6288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "240",
+      "name": "コート・ダジュール 春江店",
+      "chain": "cote-dazur",
+      "address": "福井県坂井市春江町藤鷲塚39-25",
+      "phone": "0776-58-0888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "241",
+      "name": "快活クラブ 鯖江店",
+      "chain": "katsuatsu",
+      "address": "福井県鯖江市五郎丸町312",
+      "phone": "0778-54-0388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "242",
+      "name": "コート・ダジュール 鯖江店",
+      "chain": "cote-dazur",
+      "address": "福井県鯖江市北野町11-1",
+      "phone": "0778-53-1888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "243",
+      "name": "コート・ダジュール 敦賀店",
+      "chain": "cote-dazur",
+      "address": "福井県敦賀市中央町1-8-20",
+      "phone": "0770-24-5888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "244",
+      "name": "コート・ダジュール 福井大願寺店",
+      "chain": "cote-dazur",
+      "address": "福井県福井市大願寺3-8-24",
+      "phone": "0776-28-3488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "245",
+      "name": "快活クラブ 福井駅前店",
+      "chain": "katsuatsu",
+      "address": "福井県福井市大手2-6-4　2～3F",
+      "phone": "0776-28-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "246",
+      "name": "快活クラブ 福井米松店",
+      "chain": "katsuatsu",
+      "address": "福井県福井市米松2-23-33",
+      "phone": "0776-53-9488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "247",
+      "name": "快活クラブ 甲府上阿原店",
+      "chain": "katsuatsu",
+      "address": "山梨県甲府市上阿原町455-1",
+      "phone": "055-231-8188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "248",
+      "name": "コート・ダジュール 田富リバーシティ店",
+      "chain": "cote-dazur",
+      "address": "山梨県中巨摩郡昭和町河西1063-1",
+      "phone": "055-240-7388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "249",
+      "name": "コート・ダジュール 甲府昭和店",
+      "chain": "cote-dazur",
+      "address": "山梨県中巨摩郡昭和町西条71-1",
+      "phone": "055-268-6088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "250",
+      "name": "快活クラブ 石和店",
+      "chain": "katsuatsu",
+      "address": "山梨県笛吹市石和町四日市場1596",
+      "phone": "055-261-8388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "251",
+      "name": "コート・ダジュール 伊那店",
+      "chain": "cote-dazur",
+      "address": "長野県伊那市中央4615-1",
+      "phone": "0265-71-6788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "252",
+      "name": "コート・ダジュール 佐久平駅前店",
+      "chain": "cote-dazur",
+      "address": "長野県佐久市佐久平駅東10-2",
+      "phone": "0267-66-3688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "253",
+      "name": "快活クラブ 松本南店",
+      "chain": "katsuatsu",
+      "address": "長野県松本市平田東2-17-6",
+      "phone": "0263-85-3088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "254",
+      "name": "快活クラブ 上田産業道路店",
+      "chain": "katsuatsu",
+      "address": "長野県上田市材木町2-10-1　AOKI　2F",
+      "phone": "0268-28-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "255",
+      "name": "快活クラブ 諏訪赤沼店",
+      "chain": "katsuatsu",
+      "address": "長野県諏訪市四賀1751-1",
+      "phone": "0266-56-1088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "256",
+      "name": "快活クラブ 長野南バイパス店",
+      "chain": "katsuatsu",
+      "address": "長野県長野市稲里町中央4丁目9-10",
+      "phone": "026-286-6288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "257",
+      "name": "コート・ダジュール 南高田店",
+      "chain": "cote-dazur",
+      "address": "長野県長野市高田字高田1928",
+      "phone": "026-251-6188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "258",
+      "name": "快活クラブ 長野昭和通り店",
+      "chain": "katsuatsu",
+      "address": "長野県長野市問御所町1170-17",
+      "phone": "026-291-5988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "259",
+      "name": "快活クラブ 岐阜羽島店",
+      "chain": "katsuatsu",
+      "address": "岐阜県羽島市舟橋町138-1",
+      "phone": "058-394-6388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "260",
+      "name": "キッズランドUS岐阜各務原店",
+      "chain": "kidsland-us",
+      "address": "岐阜県各務原市鵜沼三ツ池町3丁目132イズミヤショッピングセンター各務原 2階",
+      "phone": "070-5451-2820",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "261",
+      "name": "キッズランドUS 岐阜可児店",
+      "chain": "kidsland-us",
+      "address": "岐阜県可児市下恵土5750 パティオ可児ショッピングプラザ 3階",
+      "phone": "070-7814-3233",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "262",
+      "name": "快活クラブ 可児店",
+      "chain": "katsuatsu",
+      "address": "岐阜県可児市広見1909-2",
+      "phone": "0574-60-5068",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "263",
+      "name": "快活クラブ 岐阜穂積店",
+      "chain": "katsuatsu",
+      "address": "岐阜県岐阜市西河渡3-68-2",
+      "phone": "058-255-5688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "264",
+      "name": "快活クラブ 岐阜柳津店",
+      "chain": "katsuatsu",
+      "address": "岐阜県岐阜市柳津町本郷4-113 タイヨーボービル1F",
+      "phone": "058-218-2188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "265",
+      "name": "キッズランドUS 岐阜柳津店",
+      "chain": "kidsland-us",
+      "address": "岐阜県岐阜市柳津町本郷4丁目1-1イオン柳津店3F",
+      "phone": "070-5364-0430",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "266",
+      "name": "快活クラブ 大垣店",
+      "chain": "katsuatsu",
+      "address": "岐阜県大垣市築捨町4-67-1",
+      "phone": "0584-89-7388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "267",
+      "name": "快活クラブ 掛川店",
+      "chain": "katsuatsu",
+      "address": "静岡県掛川市大池624-3",
+      "phone": "0537-62-1888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "268",
+      "name": "快活クラブ 御殿場店",
+      "chain": "katsuatsu",
+      "address": "静岡県御殿場市茱萸沢95-15",
+      "phone": "0550-80-4588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "269",
+      "name": "快活クラブ 三島店",
+      "chain": "katsuatsu",
+      "address": "静岡県駿東郡清水町玉川108-1",
+      "phone": "055-991-7588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "270",
+      "name": "快活クラブ 沼津店",
+      "chain": "katsuatsu",
+      "address": "静岡県沼津市共栄町19-5",
+      "phone": "055-927-3988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "271",
+      "name": "快活クラブ 静岡流通通り店",
+      "chain": "katsuatsu",
+      "address": "静岡県静岡市葵区沓谷6-18-10",
+      "phone": "054-267-2488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "272",
+      "name": "快活クラブ 静岡曲金店",
+      "chain": "katsuatsu",
+      "address": "静岡県静岡市駿河区曲金7-9-5",
+      "phone": "054-202-7588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "273",
+      "name": "快活クラブ 静岡寿町店",
+      "chain": "katsuatsu",
+      "address": "静岡県静岡市駿河区寿町13-13",
+      "phone": "054-654-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "274",
+      "name": "キッズランドUS 静岡清水店",
+      "chain": "kidsland-us",
+      "address": "静岡県静岡市清水区高橋5丁目1番1号バロー清水高橋地下1階",
+      "phone": "054-340-4957",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "275",
+      "name": "快活クラブ 清水春日店",
+      "chain": "katsuatsu",
+      "address": "静岡県静岡市清水区春日1-5-11",
+      "phone": "054-355-0688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "276",
+      "name": "快活クラブ 島田店",
+      "chain": "katsuatsu",
+      "address": "静岡県島田市道悦1-15-12",
+      "phone": "0547-33-7288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "277",
+      "name": "コート・ダジュール 藤枝店",
+      "chain": "cote-dazur",
+      "address": "静岡県藤枝市小石川町2-1-23",
+      "phone": "054-647-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "278",
+      "name": "快活クラブ 藤枝店",
+      "chain": "katsuatsu",
+      "address": "静岡県藤枝市青木3-6-17",
+      "phone": "054-647-0888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "279",
+      "name": "コート・ダジュール 磐田店",
+      "chain": "cote-dazur",
+      "address": "静岡県磐田市今之浦3-7-1",
+      "phone": "0538-21-4888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "280",
+      "name": "快活クラブ 浜松南口駅前店",
+      "chain": "katsuatsu",
+      "address": "静岡県浜松市中央区砂山町322-6 4～6F",
+      "phone": "053-450-5788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "281",
+      "name": "キッズランドUS 静岡浜松店",
+      "chain": "kidsland-us",
+      "address": "静岡県浜松市中区上西町1020 浜松プラザフレスポ2階",
+      "phone": "070-5032-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "282",
+      "name": "コート・ダジュール 浜松篠ヶ瀬店",
+      "chain": "cote-dazur",
+      "address": "静岡県浜松市東区篠ヶ瀬町1234",
+      "phone": "053-423-1888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "283",
+      "name": "快活クラブ 富士吉原店",
+      "chain": "katsuatsu",
+      "address": "静岡県富士市依田原325-1",
+      "phone": "0545-55-0888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "284",
+      "name": "快活クラブ 甚目寺店",
+      "chain": "katsuatsu",
+      "address": "愛知県あま市坂牧坂塩17-1",
+      "phone": "052-462-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "285",
+      "name": "快活クラブ 三河安城店",
+      "chain": "katsuatsu",
+      "address": "愛知県安城市緑町1-26-5",
+      "phone": "0566-73-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "286",
+      "name": "快活クラブ 一宮インター店",
+      "chain": "katsuatsu",
+      "address": "愛知県一宮市島崎1-2-4",
+      "phone": "0586-81-6088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "287",
+      "name": "コート・ダジュール 岡崎南店",
+      "chain": "cote-dazur",
+      "address": "愛知県岡崎市戸崎町字越舞1-13",
+      "phone": "0564-59-4788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "288",
+      "name": "コート・ダジュール 岡崎大樹寺店",
+      "chain": "cote-dazur",
+      "address": "愛知県岡崎市大樹寺3-1-1",
+      "phone": "0564-65-3688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "289",
+      "name": "快活クラブ 蒲郡店",
+      "chain": "katsuatsu",
+      "address": "愛知県蒲郡市竹谷町梅薮24-1",
+      "phone": "0533-66-3688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "290",
+      "name": "快活クラブ 刈谷店",
+      "chain": "katsuatsu",
+      "address": "愛知県刈谷市新富町4-907",
+      "phone": "0566-63-6088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "291",
+      "name": "快活クラブ 江南店",
+      "chain": "katsuatsu",
+      "address": "愛知県江南市赤童子町桜道23-1",
+      "phone": "0587-51-0288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "292",
+      "name": "快活クラブ 春日井インター店",
+      "chain": "katsuatsu",
+      "address": "愛知県春日井市東野新町1-1-10",
+      "phone": "0568-85-4388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "293",
+      "name": "キッズランドUS 愛知瀬戸店",
+      "chain": "kidsland-us",
+      "address": "愛知県瀬戸市緑町1丁目105ドミー瀬戸菱野店2F",
+      "phone": "070-5450-7519",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "294",
+      "name": "キッズユーエスランド 愛知大口店",
+      "chain": "kidsland-us",
+      "address": "愛知県丹羽郡大口町奈良子2-79ヨシヅヤ大口店2F",
+      "phone": "080-3739-9282",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "295",
+      "name": "快活クラブ 知立店",
+      "chain": "katsuatsu",
+      "address": "愛知県知立市上重原6-35",
+      "phone": "0566-84-5888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "296",
+      "name": "快活クラブ 長久手グリーンロード店",
+      "chain": "katsuatsu",
+      "address": "愛知県長久手市喜婦嶽123",
+      "phone": "0561-64-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "297",
+      "name": "快活クラブ 津島駅前店",
+      "chain": "katsuatsu",
+      "address": "愛知県津島市今市場町3-2-3",
+      "phone": "0567-22-3288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "298",
+      "name": "快活クラブ 名和店",
+      "chain": "katsuatsu",
+      "address": "愛知県東海市名和町二番割上62-1",
+      "phone": "052-689-0588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "299",
+      "name": "コート・ダジュール 半田店",
+      "chain": "cote-dazur",
+      "address": "愛知県半田市星崎町3-39-62",
+      "phone": "0569-26-3988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "300",
+      "name": "快活クラブ 半田青山駅前店",
+      "chain": "katsuatsu",
+      "address": "愛知県半田市青山1-2-5",
+      "phone": "0569-32-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "301",
+      "name": "快活クラブ 豊橋向山店",
+      "chain": "katsuatsu",
+      "address": "愛知県豊橋市向山町三ノ輪2-2",
+      "phone": "0532-69-5388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "302",
+      "name": "快活クラブ 豊橋新栄店",
+      "chain": "katsuatsu",
+      "address": "愛知県豊橋市新栄町鳥畷4-1",
+      "phone": "0532-34-4688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "303",
+      "name": "キッズランドUS 愛知豊川店",
+      "chain": "kidsland-us",
+      "address": "愛知県豊川市諏訪3丁目133プリオ豊川地下1階",
+      "phone": "070-7814-3232",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "304",
+      "name": "快活クラブ 豊川インター店",
+      "chain": "katsuatsu",
+      "address": "愛知県豊川市馬場町薬師85",
+      "phone": "0533-80-2688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "305",
+      "name": "コート・ダジュール 豊田店",
+      "chain": "cote-dazur",
+      "address": "愛知県豊田市元宮町1-8",
+      "phone": "0565-37-3188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "306",
+      "name": "快活クラブ 豊田小坂店",
+      "chain": "katsuatsu",
+      "address": "愛知県豊田市小坂町14-2-1",
+      "phone": "0565-37-8188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "307",
+      "name": "快活クラブ 名古屋競馬場前店",
+      "chain": "katsuatsu",
+      "address": "愛知県名古屋市港区小割通3-8",
+      "phone": "052-659-2388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "308",
+      "name": "キッズランドUS 名古屋茶屋店",
+      "chain": "kidsland-us",
+      "address": "愛知県名古屋市港区西茶屋2丁目11イオンモール名古屋茶屋　3F",
+      "phone": "052-355-9996",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "309",
+      "name": "快活クラブ 四軒家店",
+      "chain": "katsuatsu",
+      "address": "愛知県名古屋市守山区白山3-503",
+      "phone": "052-760-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "310",
+      "name": "快活クラブ 守山店",
+      "chain": "katsuatsu",
+      "address": "愛知県名古屋市守山区野萩町1-46",
+      "phone": "052-797-5488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "311",
+      "name": "快活クラブ 栄広小路店",
+      "chain": "katsuatsu",
+      "address": "愛知県名古屋市中区栄4-2-8　2～7F",
+      "phone": "052-249-9388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "312",
+      "name": "快活クラブ 千音寺店",
+      "chain": "katsuatsu",
+      "address": "愛知県名古屋市中川区新家3-1407",
+      "phone": "052-439-1488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "313",
+      "name": "快活クラブ 153号天白植田店",
+      "chain": "katsuatsu",
+      "address": "愛知県名古屋市天白区焼山2-2107",
+      "phone": "052-809-3088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "314",
+      "name": "快活クラブ 名古屋楠インター店",
+      "chain": "katsuatsu",
+      "address": "愛知県名古屋市北区玄馬町234-1　2F",
+      "phone": "052-909-4388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "315",
+      "name": "コート・ダジュール 鳴海店",
+      "chain": "cote-dazur",
+      "address": "愛知県名古屋市緑区乗鞍1-305",
+      "phone": "052-879-6788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "316",
+      "name": "キッズユーエスランド 三重員弁店",
+      "chain": "kidsland-us",
+      "address": "三重県いなべ市員弁町石仏1902-2ヨシヅヤ員弁店1F",
+      "phone": "070-5450-8560",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "317",
+      "name": "快活クラブ 伊勢店",
+      "chain": "katsuatsu",
+      "address": "三重県伊勢市小木町686-5",
+      "phone": "0596-31-1388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "318",
+      "name": "快活クラブ 桑名サンシパーク店",
+      "chain": "katsuatsu",
+      "address": "三重県桑名市大仲新田163-1",
+      "phone": "0594-33-2388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "319",
+      "name": "快活クラブ 三重川越店",
+      "chain": "katsuatsu",
+      "address": "三重県三重郡川越町高松6",
+      "phone": "059-361-2188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "320",
+      "name": "快活クラブ 四日市追分店",
+      "chain": "katsuatsu",
+      "address": "三重県四日市市小古曽東1-1-2",
+      "phone": "059-349-5448",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "321",
+      "name": "快活クラブ 四日市西新地店",
+      "chain": "katsuatsu",
+      "address": "三重県四日市市西新地17-1",
+      "phone": "059-356-8388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "322",
+      "name": "キッズユーエスランド 四日市日永店",
+      "chain": "kidsland-us",
+      "address": "三重県四日市市日永4丁目2番41号日永カヨー1F",
+      "phone": "059-337-9900",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "323",
+      "name": "快活クラブ 四日市野田店",
+      "chain": "katsuatsu",
+      "address": "三重県四日市市野田1-2-33",
+      "phone": "059-334-8988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "324",
+      "name": "快活クラブ 松阪店",
+      "chain": "katsuatsu",
+      "address": "三重県松阪市塚本町13-1",
+      "phone": "0598-50-5188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "325",
+      "name": "快活クラブ 23号津南店",
+      "chain": "katsuatsu",
+      "address": "三重県津市雲出本郷町松縄1746",
+      "phone": "059-238-2888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "326",
+      "name": "快活クラブ 鈴鹿中央通店",
+      "chain": "katsuatsu",
+      "address": "三重県鈴鹿市三日市3-23-10",
+      "phone": "059-381-5588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "327",
+      "name": "キッズランドUS 三重鈴鹿店",
+      "chain": "kidsland-us",
+      "address": "三重県鈴鹿市道伯町2515フレスポ鈴鹿内",
+      "phone": "070-7817-3196",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "328",
+      "name": "キッズユーエスランド 滋賀近江八幡店",
+      "chain": "kidsland-us",
+      "address": "滋賀県近江八幡市鷹飼町南3-7イオン近江八幡店2番街1F",
+      "phone": "070-5077-3663",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "329",
+      "name": "快活クラブ 栗東店",
+      "chain": "katsuatsu",
+      "address": "滋賀県栗東市出庭536",
+      "phone": "077-554-9288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "330",
+      "name": "快活クラブ 甲賀水口店",
+      "chain": "katsuatsu",
+      "address": "滋賀県甲賀市水口町北脇1772-4",
+      "phone": "0748-65-1388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "331",
+      "name": "キッズランドUS 滋賀守山店",
+      "chain": "kidsland-us",
+      "address": "滋賀県守山市今浜町2620-5ピエリ守山店2F",
+      "phone": "070-6462-4891",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "332",
+      "name": "快活クラブ 草津新浜店",
+      "chain": "katsuatsu",
+      "address": "滋賀県草津市新浜町417-1",
+      "phone": "077-569-4488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "333",
+      "name": "快活クラブ 大津膳所店",
+      "chain": "katsuatsu",
+      "address": "滋賀県大津市馬場　1-7-9",
+      "phone": "077-511-4288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "334",
+      "name": "快活クラブ 彦根店",
+      "chain": "katsuatsu",
+      "address": "滋賀県彦根市高宮町1600-1",
+      "phone": "0749-21-4588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "335",
+      "name": "快活クラブ 宇治大久保店",
+      "chain": "katsuatsu",
+      "address": "京都府宇治市大久保町平盛65-1　AOKI2F",
+      "phone": "0774-41-3288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "336",
+      "name": "快活クラブ 宇治槇島店",
+      "chain": "katsuatsu",
+      "address": "京都府宇治市槇島町十八44-8",
+      "phone": "0774-25-6288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "337",
+      "name": "快活クラブ 西院駅前店",
+      "chain": "katsuatsu",
+      "address": "京都府京都市右京区西院東淳和院町1-1　アフレ西院4F",
+      "phone": "075-315-5488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "338",
+      "name": "快活クラブ 山科駅前店",
+      "chain": "katsuatsu",
+      "address": "京都府京都市山科区安朱南屋敷町30-7　3F",
+      "phone": "075-584-1588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "339",
+      "name": "快活クラブ 新堀川店",
+      "chain": "katsuatsu",
+      "address": "京都府京都市伏見区南寝小屋町21",
+      "phone": "075-611-4688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "340",
+      "name": "快活クラブ 向日店",
+      "chain": "katsuatsu",
+      "address": "京都府向日市鶏冠井町馬司15-1",
+      "phone": "075-924-3088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "341",
+      "name": "キッズランドUS 京都八幡店",
+      "chain": "kidsland-us",
+      "address": "京都府八幡市八幡源氏垣外1-4ファミレやわた3F",
+      "phone": "080-7953-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "342",
+      "name": "キッズランドUS 大阪和泉店",
+      "chain": "kidsland-us",
+      "address": "大阪府和泉市室堂町824-36　コムボックス光明池2階",
+      "phone": "070-5451-2633",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "343",
+      "name": "快活クラブ 岸和田今木店",
+      "chain": "katsuatsu",
+      "address": "大阪府岸和田市今木町9-1",
+      "phone": "072-448-6088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "344",
+      "name": "快活クラブ 浜寺石津店",
+      "chain": "katsuatsu",
+      "address": "大阪府堺市西区浜寺石津町西2-1-22　2F",
+      "phone": "072-241-9988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "345",
+      "name": "快活クラブ 堺鳳店",
+      "chain": "katsuatsu",
+      "address": "大阪府堺市西区鳳東町7-834",
+      "phone": "072-272-4388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "346",
+      "name": "コート・ダジュール 堺百舌鳥店",
+      "chain": "cote-dazur",
+      "address": "大阪府堺市北区百舌鳥西之町3-530",
+      "phone": "072-246-6888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "347",
+      "name": "快活クラブ 寝屋川池田店",
+      "chain": "katsuatsu",
+      "address": "大阪府寝屋川市池田3-8-26",
+      "phone": "072-830-3288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "348",
+      "name": "キッズユーエスランド 大阪寝屋川店",
+      "chain": "kidsland-us",
+      "address": "大阪府寝屋川市日新町3-15島忠ホームズ寝屋川店内2F",
+      "phone": "070-5450-9561",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "349",
+      "name": "快活クラブ 千里本店",
+      "chain": "katsuatsu",
+      "address": "大阪府吹田市千里山竹園1-5-1　AOKI3F",
+      "phone": "06-6190-1388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "350",
+      "name": "キッズユーエスランド 大阪泉佐野店",
+      "chain": "kidsland-us",
+      "address": "大阪府泉佐野市下瓦屋2丁目2-77いこらも～る泉佐野3F",
+      "phone": "080-4132-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "351",
+      "name": "快活クラブ 26号泉佐野店",
+      "chain": "katsuatsu",
+      "address": "大阪府泉佐野市高松東2-6437",
+      "phone": "072-458-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "352",
+      "name": "キッズランドUS 大阪ベイタワー店",
+      "chain": "kidsland-us",
+      "address": "大阪府大阪市港区弁天1-2-2大阪ベイタワー　イースト7階",
+      "phone": "070-5450-9488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "353",
+      "name": "快活クラブ 長居駅前店",
+      "chain": "katsuatsu",
+      "address": "大阪府大阪市住吉区長居東4-7-8　3F",
+      "phone": "06-4700-7188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "354",
+      "name": "快活クラブ 蒲生四丁目店",
+      "chain": "katsuatsu",
+      "address": "大阪府大阪市城東区蒲生4-22-4　4F",
+      "phone": "06-4255-5088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "355",
+      "name": "快活クラブ 城東古市店",
+      "chain": "katsuatsu",
+      "address": "大阪府大阪市城東区古市1-21-25",
+      "phone": "06-6936-1188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "356",
+      "name": "キッズランドUS 大阪今福店",
+      "chain": "kidsland-us",
+      "address": "大阪府大阪市城東区今福東1丁目10-5イズミヤ今福店4F",
+      "phone": "070-5450-9656",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "357",
+      "name": "快活クラブ 南津守店",
+      "chain": "katsuatsu",
+      "address": "大阪府大阪市西成区南津守6-1-70",
+      "phone": "06-6653-4888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "358",
+      "name": "快活クラブ 道頓堀店",
+      "chain": "katsuatsu",
+      "address": "大阪府大阪市中央区道頓堀1-2-15　3～8F",
+      "phone": "06-6214-5788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "359",
+      "name": "快活クラブ 東住吉店",
+      "chain": "katsuatsu",
+      "address": "大阪府大阪市東住吉区住道矢田5-13-3",
+      "phone": "06-6703-9888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "360",
+      "name": "快活クラブ 天六店",
+      "chain": "katsuatsu",
+      "address": "大阪府大阪市北区天神橋6-7-12　7～9F",
+      "phone": "06-6354-0988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "361",
+      "name": "快活クラブ 阪急三国駅前店",
+      "chain": "katsuatsu",
+      "address": "大阪府大阪市淀川区西三国4-8-19　B1",
+      "phone": "06-6399-0988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "362",
+      "name": "キッズランドUS MAX 東大阪店",
+      "chain": "kidsland-us",
+      "address": "大阪府東大阪市稲田新町3丁目9-64　フレスポ東大阪2階",
+      "phone": "070-5450-8716",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "363",
+      "name": "快活クラブ 東大阪荒本店",
+      "chain": "katsuatsu",
+      "address": "大阪府東大阪市荒本西1-1-4",
+      "phone": "06-6618-0588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "364",
+      "name": "快活クラブ 外環中石切店",
+      "chain": "katsuatsu",
+      "address": "大阪府東大阪市中石切町6-4-39",
+      "phone": "072-980-8488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "365",
+      "name": "快活クラブ 布施駅前店",
+      "chain": "katsuatsu",
+      "address": "大阪府東大阪市長堂1-2-17",
+      "phone": "06-6618-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "366",
+      "name": "快活クラブ 八尾宮町店",
+      "chain": "katsuatsu",
+      "address": "大阪府八尾市宮町3-4-66",
+      "phone": "072-928-6388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "367",
+      "name": "快活クラブ 外環八尾店",
+      "chain": "katsuatsu",
+      "address": "大阪府八尾市弓削町南3-33",
+      "phone": "072-920-5888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "368",
+      "name": "コート・ダジュール 八尾青山店",
+      "chain": "cote-dazur",
+      "address": "大阪府八尾市中田1-5-1",
+      "phone": "072-998-8288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "369",
+      "name": "快活クラブ 枚方市駅北口店",
+      "chain": "katsuatsu",
+      "address": "大阪府枚方市岡本町2-22　2・3F",
+      "phone": "072-846-6488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "370",
+      "name": "快活クラブ 1号枚方店",
+      "chain": "katsuatsu",
+      "address": "大阪府枚方市松丘町19-1",
+      "phone": "072-805-5388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "371",
+      "name": "快活クラブ 26号和泉店",
+      "chain": "katsuatsu",
+      "address": "大阪府和泉市富秋町2-10-4",
+      "phone": "0725-47-1888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "372",
+      "name": "コート・ダジュール 伊丹昆陽店",
+      "chain": "cote-dazur",
+      "address": "兵庫県伊丹市昆陽5-138",
+      "phone": "072-785-9988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "373",
+      "name": "キッズランドUS 兵庫伊丹店",
+      "chain": "kidsland-us",
+      "address": "兵庫県伊丹市池尻1丁目1番　イズミヤショッピングセンター昆陽店　3階",
+      "phone": "070-5451-1381",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "374",
+      "name": "快活クラブ 250号加古川店",
+      "chain": "katsuatsu",
+      "address": "兵庫県加古川市野口町長砂1177-5",
+      "phone": "079-429-6388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "375",
+      "name": "コート・ダジュール 高砂店",
+      "chain": "cote-dazur",
+      "address": "兵庫県高砂市神爪3丁目1-1",
+      "phone": "079-441-9337",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "376",
+      "name": "快活クラブ 神戸伊川谷店",
+      "chain": "katsuatsu",
+      "address": "兵庫県神戸市西区伊川谷町潤和696",
+      "phone": "078-978-1388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "377",
+      "name": "キッズランドUS 神戸大久保店",
+      "chain": "kidsland-us",
+      "address": "兵庫県神戸市西区大沢1丁目5-2ホームプラザナフコ大久保インター店2F",
+      "phone": "070-5450-9472",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "378",
+      "name": "快活クラブ 高速長田駅前店",
+      "chain": "katsuatsu",
+      "address": "兵庫県神戸市長田区四番町8-3　2F",
+      "phone": "078-515-8588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "379",
+      "name": "キッズユーエスランド 神戸長田南店",
+      "chain": "kidsland-us",
+      "address": "兵庫県神戸市長田区東尻池新町1-20イオン長田南2F",
+      "phone": "070-5451-1484",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "380",
+      "name": "キッズランドUS 神戸甲南山手店",
+      "chain": "kidsland-us",
+      "address": "兵庫県神戸市東灘区森南町1丁目5-1セルバ甲南山手5F",
+      "phone": "070-5450-9526",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "381",
+      "name": "コート・ダジュール 東灘店",
+      "chain": "cote-dazur",
+      "address": "兵庫県神戸市東灘区田中町5-1-1",
+      "phone": "078-412-8488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "382",
+      "name": "快活クラブ グランド六甲店",
+      "chain": "katsuatsu",
+      "address": "兵庫県神戸市灘区友田町5-2-1　2F",
+      "phone": "078-845-8988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "383",
+      "name": "快活クラブ 鈴蘭台店",
+      "chain": "katsuatsu",
+      "address": "兵庫県神戸市北区山田町小部法殿ノ下25-2",
+      "phone": "078-595-4688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "384",
+      "name": "快活クラブ 西宮丸橋店",
+      "chain": "katsuatsu",
+      "address": "兵庫県西宮市丸橋町4-24",
+      "phone": "0798-68-6088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "385",
+      "name": "快活クラブ 国道2号西宮店",
+      "chain": "katsuatsu",
+      "address": "兵庫県西宮市六湛寺町1-13　3F",
+      "phone": "0798-38-9188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "386",
+      "name": "快活クラブ 阪急塚口駅前店",
+      "chain": "katsuatsu",
+      "address": "兵庫県尼崎市塚口町1-17-1　2F",
+      "phone": "06-4961-7088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "387",
+      "name": "快活クラブ 姫路駅前店",
+      "chain": "katsuatsu",
+      "address": "兵庫県姫路市駅前町254　3F",
+      "phone": "079-226-4288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "388",
+      "name": "快活クラブ 姫路飾磨店",
+      "chain": "katsuatsu",
+      "address": "兵庫県姫路市飾磨区構2-51",
+      "phone": "079-235-4488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "389",
+      "name": "コート・ダジュール 宝塚店",
+      "chain": "cote-dazur",
+      "address": "兵庫県宝塚市旭町1-1-25",
+      "phone": "0797-86-4388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "390",
+      "name": "快活クラブ 奈良橿原店",
+      "chain": "katsuatsu",
+      "address": "奈良県橿原市十市町431",
+      "phone": "0744-20-0988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "391",
+      "name": "快活クラブ 大和高田店",
+      "chain": "katsuatsu",
+      "address": "奈良県葛城市東室143-1",
+      "phone": "0745-69-1788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "392",
+      "name": "キッズランドUS 奈良香芝店",
+      "chain": "kidsland-us",
+      "address": "奈良県香芝市磯壁3丁目40-1じゃんぼスクエア香芝店2F",
+      "phone": "070-5467-4743",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "393",
+      "name": "快活クラブ 大和郡山店",
+      "chain": "katsuatsu",
+      "address": "奈良県大和郡山市筒井町531-6",
+      "phone": "0743-59-6788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "394",
+      "name": "キッズランドUS 奈良学園前店",
+      "chain": "kidsland-us",
+      "address": "奈良県奈良市学園中4丁目539-1イズミヤショッピングセンター学園前2階",
+      "phone": "080-7008-6440",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "395",
+      "name": "快活クラブ 24号奈良店",
+      "chain": "katsuatsu",
+      "address": "奈良県奈良市大安寺町553-3",
+      "phone": "0742-32-1588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "396",
+      "name": "快活クラブ 和歌山岩出店",
+      "chain": "katsuatsu",
+      "address": "和歌山県岩出市備前50",
+      "phone": "0736-69-5888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "397",
+      "name": "快活クラブ 和歌山国体道路店",
+      "chain": "katsuatsu",
+      "address": "和歌山県和歌山市小雑賀770-3",
+      "phone": "073-402-6088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "398",
+      "name": "キッズランドUS 和歌山店",
+      "chain": "kidsland-us",
+      "address": "和歌山県和歌山市中野31-1パームシティ和歌山内1F",
+      "phone": "070-5451-1069",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "399",
+      "name": "快活クラブ 紀ノ川大橋店",
+      "chain": "katsuatsu",
+      "address": "和歌山県和歌山市湊1771-5",
+      "phone": "073-453-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "400",
+      "name": "快活クラブ 鳥取吉成店",
+      "chain": "katsuatsu",
+      "address": "鳥取県鳥取市叶303-1",
+      "phone": "0857-37-4988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "401",
+      "name": "快活クラブ 米子店",
+      "chain": "katsuatsu",
+      "address": "鳥取県米子市米原4-5-65",
+      "phone": "0859-36-5858",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "402",
+      "name": "快活クラブ 出雲店",
+      "chain": "katsuatsu",
+      "address": "島根県出雲市渡橋町754-5",
+      "phone": "0853-24-9888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "403",
+      "name": "快活クラブ 松江店",
+      "chain": "katsuatsu",
+      "address": "島根県松江市学園1-1-1",
+      "phone": "0852-60-1788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "404",
+      "name": "快活クラブ フレスポ高屋店",
+      "chain": "katsuatsu",
+      "address": "岡山県岡山市中区高屋308-1",
+      "phone": "086-270-6088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "405",
+      "name": "コート・ダジュール 岡山店",
+      "chain": "cote-dazur",
+      "address": "岡山県岡山市南区新保1135-8",
+      "phone": "086-232-6484",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "406",
+      "name": "快活クラブ 岡山大安寺店",
+      "chain": "katsuatsu",
+      "address": "岡山県岡山市北区大安寺南町2-6-5",
+      "phone": "086-214-2188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "407",
+      "name": "快活クラブ 岡山駅東口店",
+      "chain": "katsuatsu",
+      "address": "岡山県岡山市北区本町1-13",
+      "phone": "086-224-2988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "408",
+      "name": "快活クラブ 倉敷児島店",
+      "chain": "katsuatsu",
+      "address": "岡山県倉敷市児島下の町2-1570",
+      "phone": "086-474-3388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "409",
+      "name": "コート・ダジュール 倉敷店",
+      "chain": "cote-dazur",
+      "address": "岡山県倉敷市西中新田534-1",
+      "phone": "086-430-0588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "410",
+      "name": "快活クラブ 倉敷水島店",
+      "chain": "katsuatsu",
+      "address": "岡山県倉敷市東塚1-312-1",
+      "phone": "086-455-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "411",
+      "name": "キッズランドUS MAX 広島ベイサイドフォート店",
+      "chain": "kidsland-us",
+      "address": "広島県安芸郡坂町字亀石山1120-10広島ベイサイドフォート2F",
+      "phone": "070-5450-8528",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "412",
+      "name": "快活クラブ 広島祇園店",
+      "chain": "katsuatsu",
+      "address": "広島県広島市安佐南区西原9-15-20",
+      "phone": "082-832-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "413",
+      "name": "快活クラブ 五日市駅前店",
+      "chain": "katsuatsu",
+      "address": "広島県広島市佐伯区吉見園1-27　5F",
+      "phone": "082-925-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "414",
+      "name": "快活クラブ 広島横川店",
+      "chain": "katsuatsu",
+      "address": "広島県広島市西区横川町2-6-1",
+      "phone": "082-532-7188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "415",
+      "name": "快活クラブ 三原店",
+      "chain": "katsuatsu",
+      "address": "広島県三原市古浜1-5-11",
+      "phone": "0848-81-2388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "416",
+      "name": "快活クラブ 東広島西条2号店",
+      "chain": "katsuatsu",
+      "address": "広島県東広島市西条御条町1-21",
+      "phone": "082-431-4588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "417",
+      "name": "快活クラブ 東広島西条店",
+      "chain": "katsuatsu",
+      "address": "広島県東広島市西条土与丸6-1-16",
+      "phone": "082-493-7188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "418",
+      "name": "快活クラブ 福山松永店",
+      "chain": "katsuatsu",
+      "address": "広島県福山市松永町6-11-38-21",
+      "phone": "084-930-6858",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "419",
+      "name": "快活クラブ 福山緑町店",
+      "chain": "katsuatsu",
+      "address": "広島県福山市松浜町4-5-35",
+      "phone": "084-973-1488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "420",
+      "name": "快活クラブ 福山東深津店",
+      "chain": "katsuatsu",
+      "address": "広島県福山市東深津町3-14-11",
+      "phone": "084-973-0688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "421",
+      "name": "キッズランドUS MAX 山口下関店",
+      "chain": "kidsland-us",
+      "address": "山口県下関市長府才川　1丁目42-30　　アクロスプラザ下関長府　A棟2階",
+      "phone": "080-4421-3892",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "422",
+      "name": "快活クラブ 宇部中央店",
+      "chain": "katsuatsu",
+      "address": "山口県宇部市中央町3-16-46",
+      "phone": "0836-29-2188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "423",
+      "name": "キッズランドUS MAX 山口宇部店",
+      "chain": "kidsland-us",
+      "address": "山口県宇部市東岐波1569-1ミスターマックス宇部ショッピングセンター1階",
+      "phone": "070-5450-8232",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "424",
+      "name": "快活クラブ 下関綾羅木店",
+      "chain": "katsuatsu",
+      "address": "山口県下関市綾羅木新町3-2-1",
+      "phone": "083-250-1688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "425",
+      "name": "快活クラブ 下関長府店",
+      "chain": "katsuatsu",
+      "address": "山口県下関市長府才川1-42-30",
+      "phone": "083-249-0688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "426",
+      "name": "快活クラブ 山口吉敷店",
+      "chain": "katsuatsu",
+      "address": "山口県山口市吉敷下東4-18-25",
+      "phone": "083-921-7088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "427",
+      "name": "キッズランドUS フジグラン山口店",
+      "chain": "kidsland-us",
+      "address": "山口県山口市黒川3736フジグラン山口店1F",
+      "phone": "080-4895-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "428",
+      "name": "快活クラブ 山口大内店",
+      "chain": "katsuatsu",
+      "address": "山口県山口市大内中央1-9-5",
+      "phone": "083-941-0488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "429",
+      "name": "快活クラブ 周南久米店",
+      "chain": "katsuatsu",
+      "address": "山口県周南市久米中央一丁目14番3号",
+      "phone": "0834-36-0778",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "430",
+      "name": "快活クラブ 防府店",
+      "chain": "katsuatsu",
+      "address": "山口県防府市佐波2-7-15",
+      "phone": "0835-27-5888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "431",
+      "name": "快活クラブ 徳島蔵本店",
+      "chain": "katsuatsu",
+      "address": "徳島県徳島市南庄町4-57-5",
+      "phone": "088-634-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "432",
+      "name": "快活クラブ 徳島大学前店",
+      "chain": "katsuatsu",
+      "address": "徳島県徳島市南常三島町1-5　2F",
+      "phone": "088-611-3288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "433",
+      "name": "快活クラブ 徳島沖浜店",
+      "chain": "katsuatsu",
+      "address": "徳島県徳島市八万町大野128-1",
+      "phone": "088-669-2188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "434",
+      "name": "快活クラブ 丸亀店",
+      "chain": "katsuatsu",
+      "address": "香川県丸亀市土器町東8-11",
+      "phone": "0877-21-2778",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "435",
+      "name": "キッズランドUS 香川高松店",
+      "chain": "kidsland-us",
+      "address": "香川県高松市常磐町1丁目3番地14階",
+      "phone": "070-5450-9545",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "436",
+      "name": "快活クラブ 高松中央通り店",
+      "chain": "katsuatsu",
+      "address": "香川県高松市東ハゼ町12-9",
+      "phone": "087-814-9788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "437",
+      "name": "快活クラブ 高松福岡町店",
+      "chain": "katsuatsu",
+      "address": "香川県高松市福岡町3丁目5-2",
+      "phone": "087-811-0588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "438",
+      "name": "快活クラブ 松山大街道店",
+      "chain": "katsuatsu",
+      "address": "愛媛県松山市大街道1-5-13",
+      "phone": "089-998-2988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "439",
+      "name": "快活クラブ 愛媛重信店",
+      "chain": "katsuatsu",
+      "address": "愛媛県松山市南梅本町1303-1　グルメアベニュー2F",
+      "phone": "089-990-8988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "440",
+      "name": "キッズランドUS 愛媛東温店",
+      "chain": "kidsland-us",
+      "address": "愛媛県東温市見奈良1125クールスモール2F",
+      "phone": "070-5451-1480",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "441",
+      "name": "快活クラブ 高知中万々店",
+      "chain": "katsuatsu",
+      "address": "高知県高知市南久万190-4",
+      "phone": "088-802-1088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "442",
+      "name": "快活クラブ 楽市楽座久留米店",
+      "chain": "katsuatsu",
+      "address": "福岡県久留米市東合川2-2-1　3F",
+      "phone": "0942-41-4488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "443",
+      "name": "快活クラブ 久留米上津バイパス店",
+      "chain": "katsuatsu",
+      "address": "福岡県久留米市本山1-10-10",
+      "phone": "0942-51-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "444",
+      "name": "快活クラブ 福岡行橋店",
+      "chain": "katsuatsu",
+      "address": "福岡県行橋市西宮市4-1-12",
+      "phone": "0930-26-1388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "445",
+      "name": "キッズランドUS MAX 福岡久山店",
+      "chain": "kidsland-us",
+      "address": "福岡県糟屋郡粕屋町大字山田1075トリアス久山イーストモールP棟",
+      "phone": "080-4731-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "446",
+      "name": "快活クラブ 福岡水城店",
+      "chain": "katsuatsu",
+      "address": "福岡県太宰府市水城1-404-1",
+      "phone": "092-920-7788",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "447",
+      "name": "キッズランドUS 福岡大牟田店",
+      "chain": "kidsland-us",
+      "address": "福岡県大牟田市岬町3番4イオンモール大牟田2F",
+      "phone": "070-1543-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "448",
+      "name": "快活クラブ 飯塚店",
+      "chain": "katsuatsu",
+      "address": "福岡県飯塚市若菜260-1",
+      "phone": "0948-30-1588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "449",
+      "name": "コート・ダジュール 薬院大通店",
+      "chain": "cote-dazur",
+      "address": "福岡県福岡市中央区薬院2-14-25　2F",
+      "phone": "092-717-7888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "450",
+      "name": "快活クラブ ブランチ福岡下原店",
+      "chain": "katsuatsu",
+      "address": "福岡県福岡市東区下原4-2-1　2F",
+      "phone": "092-674-2088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "451",
+      "name": "キッズランドUS 福岡アイランドアイ店",
+      "chain": "kidsland-us",
+      "address": "福岡県福岡市東区香椎照葉6-6-6アイランドアイ2F",
+      "phone": "070-6420-7917",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "452",
+      "name": "快活クラブ 福岡大橋駅西口店",
+      "chain": "katsuatsu",
+      "address": "福岡県福岡市南区大橋1-17-5",
+      "phone": "092-557-1288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "453",
+      "name": "快活クラブ 板付店",
+      "chain": "katsuatsu",
+      "address": "福岡県福岡市博多区西月隈6-1-51",
+      "phone": "092-589-0188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "454",
+      "name": "快活クラブ コマーシャルモール博多店",
+      "chain": "katsuatsu",
+      "address": "福岡県福岡市博多区東光寺町2-6-40 コマーシャルモール博多1F",
+      "phone": "092-402-7307",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "455",
+      "name": "キッズランドUS 北九州小倉店",
+      "chain": "kidsland-us",
+      "address": "福岡県北九州市小倉南区下曽根新町10-13F",
+      "phone": "080-4797-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "456",
+      "name": "快活クラブ 小倉西港店",
+      "chain": "katsuatsu",
+      "address": "福岡県北九州市小倉北区西港町30-18",
+      "phone": "093-562-3588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "457",
+      "name": "快活クラブ 小倉北店",
+      "chain": "katsuatsu",
+      "address": "福岡県北九州市小倉北区中津口2-2-16",
+      "phone": "093-512-5288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "458",
+      "name": "快活クラブ 八幡穴生店",
+      "chain": "katsuatsu",
+      "address": "福岡県北九州市八幡西区穴生1-8-3",
+      "phone": "093-632-8188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "459",
+      "name": "快活クラブ 八幡桃園店",
+      "chain": "katsuatsu",
+      "address": "福岡県北九州市八幡東区桃園2-1-20　5F",
+      "phone": "093-663-7488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "460",
+      "name": "キッズユーエスランド 佐賀大和店",
+      "chain": "kidsland-us",
+      "address": "佐賀県佐賀市大和町尼寺3535イオンモール佐賀大和店2F",
+      "phone": "080-3176-8497",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "461",
+      "name": "快活クラブ 佐賀兵庫店",
+      "chain": "katsuatsu",
+      "address": "佐賀県佐賀市兵庫南4-332",
+      "phone": "0952-27-7288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "462",
+      "name": "快活クラブ 佐賀本庄店",
+      "chain": "katsuatsu",
+      "address": "佐賀県佐賀市本庄町本庄969-1",
+      "phone": "0952-27-8188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "463",
+      "name": "快活クラブ 鳥栖店",
+      "chain": "katsuatsu",
+      "address": "佐賀県鳥栖市鎗田町389-1",
+      "phone": "0942-87-2988",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "464",
+      "name": "快活クラブ 佐世保大塔店",
+      "chain": "katsuatsu",
+      "address": "長崎県佐世保市大塔町1861-12",
+      "phone": "0956-20-0888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "465",
+      "name": "快活クラブ 佐世保四ヶ町店",
+      "chain": "katsuatsu",
+      "address": "長崎県佐世保市本島町3-11",
+      "phone": "0956-37-3488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "466",
+      "name": "快活クラブ 熊本宇土店",
+      "chain": "katsuatsu",
+      "address": "熊本県宇土市水町50-1",
+      "phone": "0964-24-5388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "467",
+      "name": "キッズランドUS 熊本宇土店",
+      "chain": "kidsland-us",
+      "address": "熊本県宇土市善道寺町綾織95宇土シティモール2F",
+      "phone": "080-4477-8100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "468",
+      "name": "快活クラブ 上熊本店",
+      "chain": "katsuatsu",
+      "address": "熊本県熊本市西区上熊本2-17-42",
+      "phone": "096-319-0588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "469",
+      "name": "快活クラブ 熊本田崎店",
+      "chain": "katsuatsu",
+      "address": "熊本県熊本市西区田崎2-2-88",
+      "phone": "096-319-3088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "470",
+      "name": "快活クラブ 熊本下通店",
+      "chain": "katsuatsu",
+      "address": "熊本県熊本市中央区下通1-4-14",
+      "phone": "096-312-4188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "471",
+      "name": "快活クラブ ワンダーシティ南熊本店",
+      "chain": "katsuatsu",
+      "address": "熊本県熊本市中央区九品寺6-9-43",
+      "phone": "096-375-0488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "472",
+      "name": "快活クラブ 熊本東バイパス店",
+      "chain": "katsuatsu",
+      "address": "熊本県熊本市東区上南部2-1-109　2F",
+      "phone": "096-292-8688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "473",
+      "name": "快活クラブ 熊本清水バイパス店",
+      "chain": "katsuatsu",
+      "address": "熊本県熊本市北区山室5-2-6",
+      "phone": "096-341-5388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "474",
+      "name": "キッズユーエスランド 熊本八代店",
+      "chain": "kidsland-us",
+      "address": "熊本県八代市沖町3987-3イオン八代ショッピングセンター2F",
+      "phone": "070-5465-9548",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "475",
+      "name": "快活クラブ 大分森町店",
+      "chain": "katsuatsu",
+      "address": "大分県大分市皆春1576-4",
+      "phone": "097-503-5188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "476",
+      "name": "快活クラブ 別府店",
+      "chain": "katsuatsu",
+      "address": "大分県別府市京町8-19",
+      "phone": "0977-73-7888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "477",
+      "name": "キッズランドUS 大分由布挾間店",
+      "chain": "kidsland-us",
+      "address": "大分県由布市挾間町北方77イオン挾間店2F",
+      "phone": "070-5071-4089",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "478",
+      "name": "快活クラブ 宮崎加納店",
+      "chain": "katsuatsu",
+      "address": "宮崎県宮崎市清武町加納乙254-3",
+      "phone": "0985-55-6468",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "479",
+      "name": "キッズランドUS 南宮崎店",
+      "chain": "kidsland-us",
+      "address": "宮崎県宮崎市大淀4丁目7-30イオン南宮崎店3F",
+      "phone": "080-3391-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "480",
+      "name": "快活クラブ 宮崎一の宮店",
+      "chain": "katsuatsu",
+      "address": "宮崎県宮崎市日ノ出町2-1",
+      "phone": "0985-35-6588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "481",
+      "name": "快活クラブ 都城店",
+      "chain": "katsuatsu",
+      "address": "宮崎県都城市平江町143",
+      "phone": "0986-46-3488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "482",
+      "name": "キッズランドUS 鹿児島かのや店",
+      "chain": "kidsland-us",
+      "address": "鹿児島県鹿屋市白崎町4-1　3Fイオンかのや店",
+      "phone": "080-3410-3100",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "483",
+      "name": "快活クラブ 鹿児島新栄店",
+      "chain": "katsuatsu",
+      "address": "鹿児島県鹿児島市新栄町1-28",
+      "phone": "099-214-3888",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "484",
+      "name": "快活クラブ 鹿児島天文館店",
+      "chain": "katsuatsu",
+      "address": "鹿児島県鹿児島市中町5-5",
+      "phone": "099-219-9488",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "485",
+      "name": "快活クラブ アクロスプラザ与次郎店",
+      "chain": "katsuatsu",
+      "address": "鹿児島県鹿児島市与次郎1-7-18　2F",
+      "phone": "099-214-2388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "486",
+      "name": "快活クラブ 浦添店",
+      "chain": "katsuatsu",
+      "address": "沖縄県浦添市前田3丁目1-5",
+      "phone": "098-942-5088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "487",
+      "name": "快活クラブ 沖縄コザ店",
+      "chain": "katsuatsu",
+      "address": "沖縄県沖縄市宮里1-15-15　2・3F",
+      "phone": "098-938-4388",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "488",
+      "name": "快活クラブ 那覇安謝店",
+      "chain": "katsuatsu",
+      "address": "沖縄県那覇市字安謝664-32",
+      "phone": "098-951-1188",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "489",
+      "name": "快活クラブ 那覇国際通り店",
+      "chain": "katsuatsu",
+      "address": "沖縄県那覇市牧志3-11-2　2・3F",
+      "phone": "098-869-8588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "490",
+      "name": "快活クラブ 名護店",
+      "chain": "katsuatsu",
+      "address": "沖縄県名護市名護4513",
+      "phone": "0980-54-8588",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "491",
+      "name": "BEYBLADE BAR TOKYO",
+      "chain": "beyblade-bar-tokyo",
+      "address": "東京都世田谷区北沢2丁目4−5 mosia 4F",
+      "phone": "03-6805-3350",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "492",
+      "name": "亀有香取神社",
+      "chain": "katori-jinja",
+      "address": "東京都葛飾区亀有3-42-24",
+      "phone": "03-3601-1418",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "493",
+      "name": "hotel MONday Premium 豊洲",
+      "chain": "hotel-monday",
+      "address": "東京都江東区東雲1-2-11",
+      "phone": "03-3532-8141",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "494",
+      "name": "Premium hotel MONday舞浜ビューⅠ",
+      "chain": "hotel-monday",
+      "address": "東京都江戸川区南葛西6-2-22",
+      "phone": "03-3804-3977",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "495",
+      "name": "ラウンドワンスタジアム 札幌北21条店",
+      "chain": "round1-spoccha",
+      "address": "北海道札幌市東区北21条東1丁目1番21号",
+      "phone": "011-733-8801",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "496",
+      "name": "ラウンドワンスタジアム 所沢店",
+      "chain": "round1-spoccha",
+      "address": "埼玉県所沢市東町5-22 所沢トコトコスクエア 6階",
+      "phone": "04-2940-8631",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "497",
+      "name": "ラウンドワンスタジアム ダイバーシティ東京 プラザ店",
+      "chain": "round1-spoccha",
+      "address": "東京都江東区青海(あおみ)1丁目1番10号 ダイバーシティ東京 プラザ 6階",
+      "phone": "03-3527-8491",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "498",
+      "name": "ラウンドワンスタジアム ヨロッカ春日井店",
+      "chain": "round1-spoccha",
+      "address": "愛知県春日井市六軒屋町東丘22",
+      "phone": "0568-86-1600",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "499",
+      "name": "ラウンドワンスタジアム 千日前店",
+      "chain": "round1-spoccha",
+      "address": "大阪府大阪市中央区難波1丁目3番1号",
+      "phone": "06-4708-2600",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "500",
+      "name": "ラウンドワンスタジアム 博多・半道橋店",
+      "chain": "round1-spoccha",
+      "address": "福岡県福岡市博多区半道橋2丁目2番8号",
+      "phone": "092-475-6611",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}
