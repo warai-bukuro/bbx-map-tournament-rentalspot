@@ -1,10 +1,10 @@
 import type { RentalSpot, RentalSpotsData, RentalChain } from '../types';
 import { RENTAL_CHAIN_LABELS, extractPrefecture } from '../types';
 import { geocodeAddresses, isCachedAddresses } from '../utils/geocode';
+import rawRentalSpotsData from '../data/rentalSpots.json';
 
-const DATA_URL = '/rentalSpots.json';
-const CACHE_KEY = 'bbx_rental_spots_cache_v2'; // v2 to invalidate old corrupted cache
-const CACHE_TTL = 24 * 60 * 60 * 1000; // 24時間
+const CACHE_KEY = 'bbx_rental_spots_cache_v2';
+const CACHE_TTL = 24 * 60 * 60 * 1000;
 
 interface CacheEntry {
   fetchedAt: number;
@@ -29,7 +29,6 @@ function saveCache(data: RentalSpotsData): void {
     const entry: CacheEntry = { fetchedAt: Date.now(), data };
     localStorage.setItem(CACHE_KEY, JSON.stringify(entry));
   } catch {
-    // 忽略存储错误
   }
 }
 
@@ -38,9 +37,7 @@ export async function loadRentalSpotsData(): Promise<RentalSpotsData> {
   const cached = loadCache();
   if (cached) return cached.data;
 
-  const res = await fetch(DATA_URL);
-  if (!res.ok) throw new Error(`Failed to load rental spots: ${res.status}`);
-  const data: RentalSpotsData = await res.json();
+  const data = rawRentalSpotsData as RentalSpotsData;
 
   // 都道府県を補完
   for (const spot of data.spots) {

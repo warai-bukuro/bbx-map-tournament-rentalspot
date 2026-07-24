@@ -233,7 +233,7 @@ export function App() {
       return (
         s.name.toLowerCase().includes(q) ||
         RENTAL_CHAIN_LABELS[s.chain].toLowerCase().includes(q) ||
-        s.prefecture.toLowerCase().includes(q) ||
+        s.prefecture?.toLowerCase().includes(q) ||
         s.address.toLowerCase().includes(q)
       );
     });

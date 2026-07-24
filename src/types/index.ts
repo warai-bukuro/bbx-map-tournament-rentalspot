@@ -198,7 +198,7 @@ export interface RentalSpot {
   name: string;
   chain: RentalChain;
   address: string;
-  prefecture: string;
+  prefecture?: string;
   phone?: string;
   lat: number | null;
   lng: number | null;
