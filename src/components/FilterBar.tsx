@@ -96,7 +96,7 @@ export function FilterBar({
         </div>
       </>}
 
-      <div className="filter-section">
+      <div className="filter-section filter-section--toggle">
         <label className="filter-check filter-section__master">
           <input
             type="checkbox"
