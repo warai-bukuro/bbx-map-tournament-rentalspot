@@ -501,6 +501,27 @@ body {
 }
 
 /* ===== Rental Spot Markers (四角マーカー) ===== */
+.rental-div-icon {
+  pointer-events: none;
+}
+
+.rental-div-icon .rental-marker-icon {
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.rental-div-icon .rental-marker-icon:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  transform: scale(1.2);
+}
+
+.rental-div-icon .rental-marker-icon--selected {
+  box-shadow: 0 0 0 3px #fff, 0 2px 8px rgba(0,0,0,0.5);
+  transform: scale(1.4);
+  z-index: 1000;
+}
+
 .rental-marker-wrapper {
   position: absolute;
   width: 20px;

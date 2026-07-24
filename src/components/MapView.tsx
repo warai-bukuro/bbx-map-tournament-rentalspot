@@ -4,7 +4,16 @@ import L, { type LatLngBounds, DivIcon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const canvasRenderer = L.canvas({ padding: 0.5 });
-const isMobile = window.innerWidth < 768;
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768);
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
+  return isMobile;
+}
 import type { TournamentEvent, RentalSpot } from '../types';
 import { getBadgeColor, getBadgeLabel, RENTAL_CHAIN_COLORS, RENTAL_CHAIN_LABELS } from '../types';
 import { formatDate, formatTime } from '../utils/date';
@@ -279,6 +288,7 @@ interface MarkersProps {
 
 function Markers({ groups, selectedId, onSelect }: MarkersProps) {
   const [bounds, setBounds] = useState<LatLngBounds | null>(null);
+  const isMobile = useIsMobile();
 
   useMapEvents({
     moveend(e) { setBounds(e.target.getBounds()); },
@@ -348,8 +358,9 @@ function rentalLocKey(e: RentalSpot) {
 function createRentalIcon(color: string, isSelected: boolean) {
   const size = isSelected ? 20 : 14;
   const borderWidth = isSelected ? 4 : 2;
+  const selectedClass = isSelected ? ' rental-marker-icon--selected' : '';
   return new DivIcon({
-    html: `<div style="width: ${size}px; height: ${size}px; background: ${color}; border: ${borderWidth}px solid #111; border-radius: 3px; box-shadow: 0 1px 4px rgba(0,0,0,0.4); transform: translate(-50%, -50%);"></div>`,
+    html: `<div class="rental-marker-icon${selectedClass}" style="width: ${size}px; height: ${size}px; background: ${color}; border: ${borderWidth}px solid #111; border-radius: 3px; box-shadow: 0 1px 4px rgba(0,0,0,0.4);"></div>`,
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
     className: 'rental-div-icon',
@@ -365,6 +376,7 @@ interface RentalMarkersProps {
 
 function RentalMarkers({ spots, selectedId, onSelect }: RentalMarkersProps) {
   const [bounds, setBounds] = useState<LatLngBounds | null>(null);
+  const isMobile = useIsMobile();
 
   useMapEvents({
     moveend(e) { setBounds(e.target.getBounds()); },
@@ -375,11 +387,12 @@ function RentalMarkers({ spots, selectedId, onSelect }: RentalMarkersProps) {
   const map = useMap();
   useEffect(() => { setBounds(map.getBounds()); }, [map]);
 
+  // モバイルでは縦長画面で日本全体が収まらない可能性があるため、パディングを大きめにする
   const visible = useMemo(() => {
     if (!bounds) return spots.filter(s => s.lat !== null && s.lng !== null);
-    const pad = bounds.pad(0.1);
+    const pad = bounds.pad(isMobile ? 0.3 : 0.1);
     return spots.filter(s => s.lat !== null && s.lng !== null && pad.contains([s.lat, s.lng]));
-  }, [spots, bounds]);
+  }, [spots, bounds, isMobile]);
 
   return (
     <>
